@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    configure)
+        cd /opt/rabbitvcs-0.18
+        sudo python3 setup.py install --install-layout=deb
+        sudo chmod +x /usr/share/nemo-python/extensions/RabbitVCS.py
+        killall nemo || true
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac

@@ -1,0 +1,13 @@
+Source: hamonikr-nemo-rabbitvcs
+Section: utils
+Priority: optional
+Maintainer: HamoniKR <pkg@hamonikr.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: hamonikr-nemo-rabbitvcs
+Architecture: all
+Depends: nemo, nemo-data, nemo-python, rabbitvcs-core
+Replaces: rabbitvcs-nautilus
+Description: Source code Version Control Tool for HamoniKR
+ 소스 코드 버전을 관리할 수 있는 프로그램.

@@ -1,0 +1,1 @@
+../clients/nautilus/RabbitVCS.py
