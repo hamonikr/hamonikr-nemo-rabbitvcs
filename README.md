@@ -6,7 +6,10 @@
 
  * upstream : https://github.com/rabbitvcs/
  * related issue : https://github.com/rabbitvcs/rabbitvcs/issues/251
- 
+
+RabbitVCS 프로젝트는 사용하는 SVN, GIT, HG 등의 버전 관리 시스템에 대해 사용자에게 동일한 환경을 제공하는 GUI 프로그램입니다.
+이 프로젝트는 터미널의 명령행을 이용하지 않고도 파일 탐색기에서 모든 버전 관리 시스템의 작업을 수행할 수 있습니다.
+
 ![rabbitvcs](docs/img-1.png)
 
 ![rabbitvcs](docs/img-2.png)
