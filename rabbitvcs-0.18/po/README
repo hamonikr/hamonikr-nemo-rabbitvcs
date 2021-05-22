@@ -11,3 +11,16 @@ Update po/en_CA.po with your translations.  When you are done, type:
 
 $ mkdir -p locale/en_CA/LC_MESSAGES
 $ msgfmt --output-file=locale/en_CA/LC_MESSAGES/RabbitVCS.mo po/en_CA.po
+
+
+Korean tralsaltion
+--
+1) create template
+msginit --input=rabbitvcs-0.18/po/RabbitVCS.pot --locale=ko
+mv ko.po rabbitvcs-0.18/po/ko.po
+
+2) Update rabbitvcs-0.18/po/ko.po
+
+3) compile mo file
+mkdir -p rabbitvcs-0.18/locale/ko/LC_MESSAGES
+msgfmt --output-file=rabbitvcs-0.18/locale/ko/LC_MESSAGES/RabbitVCS.mo rabbitvcs-0.18/po/ko.po

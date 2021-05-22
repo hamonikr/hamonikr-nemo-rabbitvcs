@@ -1,19 +1,19 @@
-# Korean translations for rabbitvcs package.
-# Copyright (C) 2021 THE rabbitvcs'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the rabbitvcs package.
+# Korean translations for PACKAGE package.
+# Copyright (C) 2021 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # Kevin Kim <root@hamonikr.org>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: rabbitvcs 0.18\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-14 01:58+0200\n"
-"PO-Revision-Date: 2021-05-22 19:59+0900\n"
+"PO-Revision-Date: 2021-05-22 22:02+0900\n"
 "Last-Translator: Kevin Kim <root@hamonikr.org>\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
@@ -2117,4 +2117,3 @@ msgstr "내보내기 명령 실행 중 ..."
 #: ui/export.py:105 ui/export.py:171
 msgid "Completed Export"
 msgstr "내보내기 완료"
-
