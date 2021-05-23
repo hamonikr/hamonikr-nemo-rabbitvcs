@@ -163,12 +163,12 @@ msgid "RabbitVCS SVN"
 msgstr "SVN 저장소"
 
 #: util/contextmenuitems.py:391
-msgid "Git 저장소"
-msgstr ""
+msgid "RabbitVCS Git"
+msgstr "Git 저장소"
 
 #: util/contextmenuitems.py:396
-msgid "Hg 저장소"
-msgstr ""
+msgid "RabbitVCS Hg"
+msgstr "Hg 저장소"
 
 #: util/contextmenuitems.py:401 ui/xml/browser.xml.h:1
 msgid "Repository Browser"

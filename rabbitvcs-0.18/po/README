@@ -22,5 +22,6 @@ mv ko.po rabbitvcs-0.18/po/ko.po
 2) Update rabbitvcs-0.18/po/ko.po
 
 3) compile mo file
+rm -f rabbitvcs-0.18/locale/ko/LC_MESSAGES/RabbitVCS.mo 
 mkdir -p rabbitvcs-0.18/locale/ko/LC_MESSAGES
 msgfmt --output-file=rabbitvcs-0.18/locale/ko/LC_MESSAGES/RabbitVCS.mo rabbitvcs-0.18/po/ko.po
