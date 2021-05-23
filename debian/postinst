@@ -5,9 +5,14 @@ case "$1" in
     configure)
         # remove previous mo files
         rm -f /usr/share/locale/*/LC_MESSAGES/RabbitVCS.mo || true
+
         cd /opt/rabbitvcs-0.18
-        sudo python3 setup.py install --install-layout=deb
+        
+        sudo python3 setup.py install --install-layout=deb \
+        --record installfiles.txt
+        
         sudo chmod +x /usr/share/nemo-python/extensions/RabbitVCS.py
+        
         killall nemo || true
     ;;
 
