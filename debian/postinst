@@ -3,8 +3,8 @@ set -e
 
 case "$1" in
     configure)
-        # Update for Korean translation
-        rm -f /usr/share/locale/ko/LC_MESSAGES/RabbitVCS.mo || true
+        # remove previous mo files
+        rm -f /usr/share/locale/*/LC_MESSAGES/RabbitVCS.mo || true
         cd /opt/rabbitvcs-0.18
         sudo python3 setup.py install --install-layout=deb
         sudo chmod +x /usr/share/nemo-python/extensions/RabbitVCS.py

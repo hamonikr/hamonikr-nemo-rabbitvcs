@@ -118,7 +118,7 @@ msgstr "무효화"
 
 #: util/contextmenuitems.py:350
 msgid "Force an invalidate_extension_info() call"
-msgstr "강제 invalidate_extension_info() 호출"
+msgstr "강제로 invalidate_extension_info() 호출"
 
 #: util/contextmenuitems.py:356
 msgid "Add Emblem"
@@ -130,11 +130,11 @@ msgstr "엠블럼 추가"
 
 #: util/contextmenuitems.py:363
 msgid "Checkout..."
-msgstr "Checkout..."
+msgstr "체크아웃(Checkout)..."
 
 #: util/contextmenuitems.py:364
 msgid "Check out a working copy"
-msgstr "작업 본 확인"
+msgstr "작업본(working copy) 체크아웃(Checkout)"
 
 #: util/contextmenuitems.py:369 ui/xml/update.xml.h:1 ui/update.py:55
 #: ui/update.py:104
@@ -143,7 +143,7 @@ msgstr "업데이트(Update)"
 
 #: util/contextmenuitems.py:370
 msgid "Update a working copy"
-msgstr "작업 본 업데이트"
+msgstr "작업본(working copy) 업데이트(Update)"
 
 #: util/contextmenuitems.py:375 ui/xml/commit.xml.h:1 ui/commit.py:318
 #: ui/commit.py:386
@@ -156,18 +156,18 @@ msgstr "저장소에 대한 수정 사항 커밋"
 
 #: util/contextmenuitems.py:381 ui/xml/property_page.xml.h:5
 msgid "RabbitVCS"
-msgstr "RabbitVCS"
+msgstr ""
 
 #: util/contextmenuitems.py:386
 msgid "RabbitVCS SVN"
-msgstr "RabbitVCS SVN"
+msgstr "SVN 저장소"
 
 #: util/contextmenuitems.py:391
-msgid "RabbitVCS Git"
+msgid "Git 저장소"
 msgstr ""
 
 #: util/contextmenuitems.py:396
-msgid "RabbitVCS Hg"
+msgid "Hg 저장소"
 msgstr ""
 
 #: util/contextmenuitems.py:401 ui/xml/browser.xml.h:1
@@ -326,7 +326,7 @@ msgstr "위치 변경..."
 
 #: util/contextmenuitems.py:514
 msgid "Relocate your working copy"
-msgstr "작업 복사본 위치 변경"
+msgstr "작업본(working copy) 위치 변경"
 
 #: util/contextmenuitems.py:519
 msgid "Get Lock..."
@@ -346,11 +346,11 @@ msgstr "항목 잠금 해제"
 
 #: util/contextmenuitems.py:531 ui/cleanup.py:56
 msgid "Cleanup"
-msgstr "비우기"
+msgstr "비우기(Cleanup)"
 
 #: util/contextmenuitems.py:532
 msgid "Clean up working copy"
-msgstr "작업본 비우기"
+msgstr "작업본(working copy) 비우기(Cleanup)"
 
 #: util/contextmenuitems.py:537
 msgid "Export..."
@@ -358,7 +358,7 @@ msgstr "내보내기..."
 
 #: util/contextmenuitems.py:538
 msgid "Export a working copy or repository with no versioning information"
-msgstr "버전 정보없이 작업 복사본 또는 저장소 내보내기"
+msgstr "버전 정보없이 작업본(working copy) 또는 저장소 내보내기"
 
 #: util/contextmenuitems.py:551
 msgid "Create Repository here"
@@ -390,7 +390,7 @@ msgstr "전환(Switch)..."
 
 #: util/contextmenuitems.py:574
 msgid "Change the repository location of a working copy"
-msgstr "작업 복사본의 저장소 위치 변경"
+msgstr "작업본(working copy)의 저장소 위치 변경"
 
 #: util/contextmenuitems.py:579
 msgid "Merge..."
@@ -422,7 +422,7 @@ msgstr "패치 적용 ..."
 
 #: util/contextmenuitems.py:598
 msgid "Applies a unified diff file to the working copy"
-msgstr "통합된 diff 파일을 작업 복사본에 적용합니다."
+msgstr "통합된 diff 파일을 작업본(working copy)에 적용합니다."
 
 #: util/contextmenuitems.py:603 ui/xml/properties.xml.h:1
 msgid "Properties"
@@ -736,7 +736,7 @@ msgstr "선택(_S)"
 
 #: ui/log.py:983
 msgid "View diff against working copy"
-msgstr "작업 복사본과 비교보기"
+msgstr "작업본(working copy)과 비교보기"
 
 #: ui/log.py:993
 msgid "View diff between revisions"
@@ -744,7 +744,7 @@ msgstr "버전 간 차이점보기"
 
 #: ui/log.py:998
 msgid "Compare with working copy"
-msgstr "작업 사본과 비교"
+msgstr "작업본(working copy)과 비교"
 
 #: ui/log.py:1008
 msgid "Compare revisions"
@@ -821,7 +821,7 @@ msgstr "--vcs [svn | git] 옵션을 사용하여 버전 제어 시스템을 지�
 
 #: ui/clean.py:67
 msgid "Running Clean Command..."
-msgstr "정리 명령 실행 중 ..."
+msgstr "비우기(Cleanup) 명령 실행 중 ..."
 
 #: ui/clean.py:77
 msgid "Completed Clean"
@@ -936,7 +936,7 @@ msgstr "<b>원격 URI :</b>"
 
 #: ui/xml/property_editor.xml.h:9
 msgid "<b>Working Copy:</b>"
-msgstr "<b>작업 폴더 :</b>"
+msgstr "<b>작업본(working copy):</b>"
 
 #: ui/xml/browser.xml.h:2
 msgid "Load/Refresh"
@@ -944,7 +944,7 @@ msgstr "불러오기/새로 고침"
 
 #: ui/xml/browser.xml.h:4 ui/tags.py:108 ui/tags.py:176 ui/merge.py:508
 msgid "Revision:"
-msgstr "버전:"
+msgstr "리비전(Revision):"
 
 #: ui/xml/browser.xml.h:5
 msgid "URL:"
@@ -964,11 +964,11 @@ msgstr "에서:"
 
 #: ui/xml/relocate.xml.h:6
 msgid "<b>Change the repository of your working copy</b>"
-msgstr "<b> 작업 사본의 저장소 변경 </b>"
+msgstr "<b>작업본(working copy)의 저장소 변경 </b>"
 
 #: ui/xml/update.xml.h:4
 msgid "Rollback to specified revision number"
-msgstr "지정된 버전 번호로 롤백"
+msgstr "지정된 리비전(Revision) 번호로 롤백"
 
 #: ui/xml/update.xml.h:5
 msgid "Omit Externals"
@@ -981,11 +981,11 @@ msgstr "재귀적으로"
 #: ui/xml/update.xml.h:7 ui/xml/merge.xml.h:30 ui/xml/git-update.xml.h:7
 #: ui/xml/reset.xml.h:13
 msgid "<b>Options</b>"
-msgstr "<b> 옵션 </b>"
+msgstr "<b>옵션</b>"
 
 #: ui/xml/update.xml.h:8 ui/xml/reset.xml.h:14
 msgid "<b>Revision</b>"
-msgstr "<b> 수정 </b>"
+msgstr "<b>리비전(Revision)</b>"
 
 #: ui/xml/merge.xml.h:1
 msgid "Merge Assistant"
@@ -1003,7 +1003,7 @@ msgstr "브랜치 재 통합"
 msgid ""
 "Choose this method if you wish to merge two different branches into your "
 "working copy."
-msgstr "두 개의 다른 분기를 작업 복사본에 병합하려면이 방법을 선택하십시오."
+msgstr "두 개의 다른 분기를 작업본(working copy)에 병합하려면이 방법을 선택하십시오."
 
 #: ui/xml/merge.xml.h:5
 msgid "Merge two different trees"
@@ -1017,7 +1017,7 @@ msgstr "분기를 일부 변경하고 변경 사항을 다른 분기와 병합�
 
 #: ui/xml/merge.xml.h:7
 msgid "Merge a range of revisions"
-msgstr "다수의 버전 병합"
+msgstr "다수의 리비전(Revision) 병합"
 
 #: ui/xml/merge.xml.h:8
 msgid "Step 1: Merge Type"
@@ -1025,7 +1025,7 @@ msgstr "1 단계 : 유형 병합"
 
 #: ui/xml/merge.xml.h:9
 msgid "<b>Working Copy</b>"
-msgstr "<b>작업 본</b>"
+msgstr "<b>작업본(Working Copy) </b>"
 
 #: ui/xml/merge.xml.h:10
 msgid ""
@@ -1036,11 +1036,13 @@ msgid ""
 "Example: 4-7,9,11,15-HEAD\n"
 "\n"
 "To merge all revisions, leave the box empty."
-msgstr "로그 대화 상자를 사용하여 병합하려는 버전을 선택하십시오. 또는 각 수정본을 쉼표로 구분하여 수동으로 작성하십시오. 대시로 버전 범위를 지정할 수 있습니다.\n"
+msgstr "로그 대화 상자를 사용하여 병합하려는 리비전(Revision)을 선택하십시오. "
+"또는 각 리비전(Revision)을 쉼표로 구분하여 수동으로 작성하십시오. "
+"대시로 버전 범위를 지정할 수 있습니다.\n"
 "\n"
 "예 : 4-7,9,11,15-HEAD\n"
 "\n"
-"모든 버전을 병합하려면 상자를 비워 둡니다."
+"모든 리비전(Revision)을 병합하려면 상자를 비워 둡니다."
 
 #: ui/xml/merge.xml.h:15
 msgid "Show log"
@@ -1048,7 +1050,7 @@ msgstr "로그 표시"
 
 #: ui/xml/merge.xml.h:16
 msgid "<b>Revision Range</b>"
-msgstr "<b>버전 범위</b>"
+msgstr "<b>리비전(Revision) 범위</b>"
 
 #: ui/xml/merge.xml.h:17
 msgid "<b>URL to merge from</b>"
@@ -1056,7 +1058,7 @@ msgstr "<b>병합할 URL</b>"
 
 #: ui/xml/merge.xml.h:18
 msgid "Step 2: Merge a Range of Revisions"
-msgstr "2 단계 : 다수의 버전 병합"
+msgstr "2 단계 : 다수의 리비전(Revision) 병합"
 
 #: ui/xml/merge.xml.h:20 ui/widget.py:1037 ui/widget.py:1043
 msgid "HEAD"
@@ -1064,11 +1066,11 @@ msgstr "HEAD"
 
 #: ui/xml/merge.xml.h:21
 msgid "<b>To: (URL and revision to merge)</b>"
-msgstr "<b>받는 사람 : (통합 할 URL 및 버전)</b>"
+msgstr "<b>받는 사람 : (통합 할 URL 및 리비전(Revision))</b>"
 
 #: ui/xml/merge.xml.h:22
 msgid "<b>From: (URL and revision to merge)</b>"
-msgstr "<b>보낸 사람 : (통합 할 URL 및 버전)</b>"
+msgstr "<b>보낸 사람 : (통합 할 URL 및 리비전(Revision))</b>"
 
 #: ui/xml/merge.xml.h:23
 msgid "Step 2: Merge two different trees"
@@ -1150,10 +1152,10 @@ msgid ""
 "%theirs    - The file being merged into your working copy.\n"
 "%merged - The file to store the merged result."
 msgstr "다음 매크로를 사용하여 병합 도구를 구성하십시오.\n"
-"% base-병합 할 두 파일의 공통 조상입니다.\n"
-"% mine-작업 복사본에서 수정 한 파일입니다.\n"
-"% theirs-작업 복사본에 병합되는 파일입니다.\n"
-"% merged-병합 된 결과를 저장할 파일입니다."
+"% base     - 병합 할 두 파일의 공통 조상입니다.\n"
+"% mine     - 작업본(working copy)에서 수정 한 파일입니다.\n"
+"% theirs   - 작업본(working copy)에 병합되는 파일입니다.\n"
+"% merged   - 병합 된 결과를 저장할 파일입니다."
 
 #: ui/xml/settings.xml.h:21
 msgid "Browse..."
@@ -1568,7 +1570,7 @@ msgstr "에"
 
 #: ui/xml/log.xml.h:9
 msgid "Showing Revisions:"
-msgstr "버전 표시 :"
+msgstr "리비전(Revision) 표시 :"
 
 #: ui/xml/log.xml.h:10
 msgid "Stop on copy"
@@ -1576,7 +1578,7 @@ msgstr "복사 중지"
 
 #: ui/xml/log.xml.h:11
 msgid "<b>Revisions Table</b>"
-msgstr "<b>버전 표</b>"
+msgstr "<b>리비전(Revision) 표</b>"
 
 #: ui/xml/log.xml.h:12
 msgid "<b>Affected File(s)</b> (double-click to compare with base)"
@@ -1604,11 +1606,11 @@ msgstr "주석 달기"
 
 #: ui/xml/annotate.xml.h:4
 msgid "<b>To Revision</b>"
-msgstr "<b>버전에</b>"
+msgstr "<b>리비전(Revision)에</b>"
 
 #: ui/xml/annotate.xml.h:5
 msgid "<b>From Revision</b>"
-msgstr "<b>버전에서</b>"
+msgstr "<b>리비전(Revision)에서</b>"
 
 #: ui/xml/import.xml.h:4
 msgid "Include ignored files"
@@ -1724,7 +1726,7 @@ msgstr "번호"
 
 #: ui/widget.py:1047
 msgid "Working Copy"
-msgstr "작업 본"
+msgstr "작업본(Working Copy) "
 
 #: ui/widget.py:1268
 msgid "Repository:"
@@ -1792,7 +1794,7 @@ msgstr "추가 완료"
 
 #: ui/updateto.py:80
 msgid "Rollback To Revision"
-msgstr "버전으로 돌아가기(Rollback)"
+msgstr "리비전(Revision)으로 돌아가기(Rollback)"
 
 #: ui/updateto.py:81
 msgid "Rolling Back..."
@@ -1804,11 +1806,11 @@ msgstr "완료된 롤백"
 
 #: ui/updateto.py:91
 msgid "Update To Revision"
-msgstr "버전으로 업데이트"
+msgstr "리비전(Revision)으로 업데이트"
 
 #: ui/updateto.py:117
 msgid "What revision/branch do you want to checkout?"
-msgstr "어떤 버전/지점을 체크아웃 하시겠습니까?"
+msgstr "어떤 리비전(Revision)/지점을 체크아웃(Checkout) 하시겠습니까?"
 
 #: ui/updateto.py:138
 msgid "Checkout"
@@ -1821,7 +1823,7 @@ msgstr "%s 가져오는 중 ..."
 
 #: ui/updateto.py:145
 msgid "Completed Checkout"
-msgstr "체크아웃 완료"
+msgstr "체크아웃(Checkout) 완료"
 
 #: ui/create.py:52
 msgid "Repository successfully created"
@@ -1977,7 +1979,7 @@ msgstr "본문"
 
 #: ui/annotate.py:149
 msgid "The from revision field must be an integer"
-msgstr "버전 필드는 정수여야 합니다."
+msgstr "리비전(Revision) 필드는 정수여야 합니다."
 
 #: ui/property_editor.py:57
 msgid ""
