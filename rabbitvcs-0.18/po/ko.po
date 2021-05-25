@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: rabbitvcs 0.18\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-14 01:58+0200\n"
-"PO-Revision-Date: 2021-05-22 22:02+0900\n"
+"PO-Revision-Date: 2021-05-25 16:12+0900\n"
 "Last-Translator: Kevin Kim <root@hamonikr.org>\n"
 "Language-Team: Korean\n"
 "Language: ko\n"
@@ -16,73 +16,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.3\n"
 
-#: util/helper.py:73
+#: util/helper.py:74
 msgid "%I:%M%P"
 msgstr ""
 
-#: util/helper.py:74
+#: util/helper.py:75
 msgid "%a %I:%M%p"
 msgstr ""
 
-#: util/helper.py:75
+#: util/helper.py:76
 msgid "%b %d"
 msgstr ""
 
-#: util/helper.py:76
+#: util/helper.py:77
 msgid "%b %d %Y"
 msgstr ""
 
-#: util/helper.py:215
+#: util/helper.py:199
 msgid "(no date)"
 msgstr "(날짜 없음)"
 
-#: util/helper.py:219
+#: util/helper.py:203
 msgid "just now"
 msgstr "방금"
 
-#: util/helper.py:221
+#: util/helper.py:205
 #, python-format
 msgid "%d minute(s) ago"
 msgstr "%d 분 전"
 
-#: util/helper.py:833
+#: util/helper.py:813
 #, python-format
 msgid "%i second"
 msgid_plural "%i seconds"
 msgstr[0] "%i 초"
 
-#: util/helper.py:836
+#: util/helper.py:816
 #, python-format
 msgid "%i minute"
 msgid_plural "%i minutes"
 msgstr[0] "%i 분"
 
-#: util/helper.py:839
+#: util/helper.py:819
 #, python-format
 msgid "%i hour"
 msgid_plural "%i hours"
 msgstr[0] "%i 시간"
 
-#: util/helper.py:842
+#: util/helper.py:822
 #, python-format
 msgid "%i day"
 msgid_plural "%i days"
 msgstr[0] "%i 일"
 
-#: util/helper.py:845
+#: util/helper.py:825
 #, python-format
 msgid "%i week"
 msgid_plural "%i weeks"
 msgstr[0] "%i 주"
 
-#: util/helper.py:848
+#: util/helper.py:828
 #, python-format
 msgid "%i month"
 msgid_plural "%i months"
 msgstr[0] "%i 개월"
 
-#: util/helper.py:851
+#: util/helper.py:831
 #, python-format
 msgid "%i year"
 msgid_plural "%i years"
@@ -97,8 +98,8 @@ msgid "Bugs"
 msgstr "버그"
 
 #: util/contextmenuitems.py:331
-msgid "Open Shell"
-msgstr "쉘 열기"
+msgid "Open Python Console"
+msgstr "파이썬 콘솔 열기"
 
 #: util/contextmenuitems.py:337
 msgid "Refresh Status"
@@ -110,7 +111,7 @@ msgstr "디버그 되돌리기"
 
 #: util/contextmenuitems.py:343
 msgid "Reverts everything it sees"
-msgstr "보이는 모든 것을 되돌립니다(Revert)."
+msgstr "보이는 모든 것을 되돌립니다(Revert)"
 
 #: util/contextmenuitems.py:349
 msgid "Invalidate"
@@ -136,8 +137,8 @@ msgstr "체크아웃(Checkout)..."
 msgid "Check out a working copy"
 msgstr "작업본(working copy) 체크아웃(Checkout)"
 
-#: util/contextmenuitems.py:369 ui/xml/update.xml.h:1 ui/update.py:55
-#: ui/update.py:104
+#: util/contextmenuitems.py:369 ui/update.py:59 ui/update.py:108
+#: ui/xml/update.xml.h:1
 msgid "Update"
 msgstr "업데이트(Update)"
 
@@ -145,8 +146,8 @@ msgstr "업데이트(Update)"
 msgid "Update a working copy"
 msgstr "작업본(working copy) 업데이트(Update)"
 
-#: util/contextmenuitems.py:375 ui/xml/commit.xml.h:1 ui/commit.py:318
-#: ui/commit.py:386
+#: util/contextmenuitems.py:375 ui/commit.py:320 ui/commit.py:388
+#: ui/xml/commit.xml.h:1
 msgid "Commit"
 msgstr "커밋(Commit)"
 
@@ -210,7 +211,7 @@ msgstr "파일/폴더 간 차이점 보기"
 msgid "View the differences between two files"
 msgstr "두 파일의 차이점 보기"
 
-#: util/contextmenuitems.py:431 ui/log.py:988
+#: util/contextmenuitems.py:431 ui/annotate.py:593 ui/log.py:1004
 msgid "View diff against previous revision"
 msgstr "이전 버전과 차이점 보기"
 
@@ -234,7 +235,7 @@ msgstr "파일/폴더 비교"
 msgid "Compare the differences between two items"
 msgstr "두 항목의 차이점 비교"
 
-#: util/contextmenuitems.py:449 ui/log.py:1003
+#: util/contextmenuitems.py:449 ui/log.py:1019
 msgid "Compare with previous revision"
 msgstr "이전 버전과 비교"
 
@@ -258,8 +259,8 @@ msgstr "로그 표시"
 msgid "Show a file's log information"
 msgstr "파일의 로그 정보 표시"
 
-#: util/contextmenuitems.py:467 ui/xml/add.xml.h:1 ui/widget.py:1431
-#: ui/add.py:215 ui/add.py:240 ui/tags.py:284
+#: util/contextmenuitems.py:467 ui/widget.py:1528 ui/add.py:222 ui/add.py:247
+#: ui/xml/add.xml.h:1 ui/tags.py:291
 msgid "Add"
 msgstr "추가"
 
@@ -295,8 +296,8 @@ msgstr "삭제"
 msgid "Schedule an item to be deleted from the repository"
 msgstr "저장소에서 삭제할 항목 예약"
 
-#: util/contextmenuitems.py:496 ui/revert.py:175 ui/revert.py:201
-#: ui/xml/revert.xml.h:1
+#: util/contextmenuitems.py:496 ui/xml/revert.xml.h:1 ui/revert.py:169
+#: ui/revert.py:195
 msgid "Revert"
 msgstr "되돌리기"
 
@@ -304,7 +305,7 @@ msgstr "되돌리기"
 msgid "Revert an item to its unmodified state"
 msgstr "항목을 수정되지 않은 상태로 되돌리기"
 
-#: util/contextmenuitems.py:502 ui/markresolved.py:45 ui/markresolved.py:76
+#: util/contextmenuitems.py:502 ui/markresolved.py:49 ui/markresolved.py:83
 msgid "Mark as Resolved"
 msgstr "해결됨으로 표시"
 
@@ -344,7 +345,7 @@ msgstr "잠금 해제 ..."
 msgid "Release lock on an item"
 msgstr "항목 잠금 해제"
 
-#: util/contextmenuitems.py:531 ui/cleanup.py:56
+#: util/contextmenuitems.py:531 ui/cleanup.py:60
 msgid "Cleanup"
 msgstr "비우기(Cleanup)"
 
@@ -368,7 +369,7 @@ msgstr "여기에 저장소 만들기"
 msgid "Create a repository in a folder"
 msgstr "폴더에 저장소 만들기"
 
-#: util/contextmenuitems.py:557 ui/xml/import.xml.h:1 ui/import.py:75
+#: util/contextmenuitems.py:557 ui/xml/import.xml.h:1 ui/import.py:79
 msgid "Import"
 msgstr "가져오기"
 
@@ -414,7 +415,7 @@ msgstr "패치 만들기 ..."
 
 #: util/contextmenuitems.py:592
 msgid "Creates a unified diff file with all changes you made"
-msgstr "모든 변경 사항이 통합된 diff 파일을 만듭니다."
+msgstr "모든 변경 사항이 통합된 diff 파일을 만듭니다"
 
 #: util/contextmenuitems.py:597
 msgid "Apply Patch..."
@@ -422,7 +423,7 @@ msgstr "패치 적용 ..."
 
 #: util/contextmenuitems.py:598
 msgid "Applies a unified diff file to the working copy"
-msgstr "통합된 diff 파일을 작업본(working copy)에 적용합니다."
+msgstr "통합된 diff 파일을 작업본(working copy)에 적용합니다"
 
 #: util/contextmenuitems.py:603 ui/xml/properties.xml.h:1
 msgid "Properties"
@@ -512,11 +513,11 @@ msgstr "세부 정보 수정"
 msgid "Show and edit property details"
 msgstr "속성 세부 정보 표시 및 편집"
 
-#: util/contextmenuitems.py:674 ui/create.py:68
+#: util/contextmenuitems.py:674 ui/create.py:72
 msgid "Initialize Repository"
 msgstr "저장소 초기화"
 
-#: util/contextmenuitems.py:679 ui/clone.py:47 ui/clone.py:68
+#: util/contextmenuitems.py:679 ui/clone.py:51 ui/clone.py:72
 msgid "Clone"
 msgstr "복제(Clone)"
 
@@ -540,19 +541,19 @@ msgstr "태그(Tags)"
 msgid "Remotes"
 msgstr "원격(Remotes)"
 
-#: util/contextmenuitems.py:709 ui/clean.py:66 ui/xml/clean.xml.h:1
+#: util/contextmenuitems.py:709 ui/xml/clean.xml.h:1 ui/clean.py:69
 msgid "Clean"
 msgstr "비우기(Clean)"
 
-#: util/contextmenuitems.py:713 ui/reset.py:96 ui/xml/reset.xml.h:1
+#: util/contextmenuitems.py:713 ui/xml/reset.xml.h:1 ui/reset.py:100
 msgid "Reset"
 msgstr "초기화(Reset)"
 
-#: util/contextmenuitems.py:718 ui/stage.py:48 ui/stage.py:73
+#: util/contextmenuitems.py:718 ui/stage.py:52 ui/stage.py:78
 msgid "Stage"
 msgstr "스테이지(Stage)"
 
-#: util/contextmenuitems.py:723 ui/unstage.py:48 ui/unstage.py:73
+#: util/contextmenuitems.py:723 ui/unstage.py:52 ui/unstage.py:78
 msgid "Unstage"
 msgstr "언스테이지(Unstage)"
 
@@ -568,424 +569,490 @@ msgstr "파일 이름으로 항목 무시"
 msgid "Ignore item by file extension"
 msgstr "파일 확장자별로 항목 무시"
 
-#: ui/revert.py:74 ui/markresolved.py:50 ui/lock.py:71 ui/log.py:392
-#: ui/log.py:678 ui/action.py:120 ui/browser.py:91 ui/add.py:77 ui/commit.py:85
-msgid "Path"
-msgstr "경로(Path)"
+#: ui/dialog.py:36
+#, python-format
+msgid ""
+"An error has occurred in the RabbitVCS Nautilus extension. Please contact "
+"the <a href=\"%s\">RabbitVCS team</a> with the error details listed below:"
+msgstr ""
+"RabbitVCS Nautilus 확장 기능에서 알 수 없는 오류가 발생했습니다. 아래 오류내"
+"용을 <a href=\"%s\">RabbitVCS team</a> 에 알려주세요:"
 
-#: ui/revert.py:74 ui/markresolved.py:51 ui/lock.py:71 ui/add.py:78
-#: ui/commit.py:85
+#: ui/dialog.py:52 ui/browser.py:101 ui/annotate.py:111 ui/log.py:57
+#: ui/log.py:385 ui/log.py:676
+msgid "Date"
+msgstr "날짜"
+
+#: ui/dialog.py:52 ui/xml/dialogs/message_box.xml.h:1 ui/log.py:385
+#: ui/log.py:676
+msgid "Message"
+msgstr "메세지"
+
+#: ui/dialog.py:107
+msgid "Select a Folder"
+msgstr "폴더 선택"
+
+#: ui/dialog.py:110 ui/dialog.py:282 ui/dialog.py:302 ui/xml/reset.xml.h:2
+#: ui/xml/lock.xml.h:2 ui/xml/revert.xml.h:2 ui/xml/notification.xml.h:2
+#: ui/xml/add.xml.h:2 ui/xml/import.xml.h:2 ui/xml/clean.xml.h:2
+#: ui/xml/settings.xml.h:2 ui/xml/dialogs/property.xml.h:2
+#: ui/xml/dialogs/delete_confirmation.xml.h:2
+#: ui/xml/dialogs/create_folder.xml.h:2
+#: ui/xml/dialogs/name_email_prompt.xml.h:2 ui/xml/dialogs/loading.xml.h:2
+#: ui/xml/dialogs/previous_messages.xml.h:2
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:2 ui/xml/git-update.xml.h:1
+#: ui/xml/commit.xml.h:2 ui/xml/properties.xml.h:2 ui/xml/update.xml.h:2
+#: ui/xml/relocate.xml.h:2 ui/xml/ignore.xml.h:2
+msgid "_Cancel"
+msgstr "취소(_C)"
+
+#: ui/dialog.py:111 ui/browser.py:341 ui/log.py:945
+msgid "_Select"
+msgstr "선택(_S)"
+
+#: ui/dialog.py:137 ui/xml/log.xml.h:8
+msgid "to"
+msgstr ""
+
+#: ui/dialog.py:277
+msgid "Select a File"
+msgstr "파일 선택"
+
+#: ui/dialog.py:283
+msgid "_Open"
+msgstr "열기(_O)"
+
+#: ui/dialog.py:297
+msgid "Save As..."
+msgstr "다른 이름으로 저장..."
+
+#: ui/dialog.py:303 ui/xml/properties.xml.h:3
+msgid "_Save"
+msgstr "저장(_S)"
+
+#: ui/dialog.py:317 ui/xml/dialogs/confirmation.xml.h:4
+msgid "Are you sure you want to continue?"
+msgstr "계속 하시겠습니까?"
+
+#: ui/dialog.py:345
+msgid "the selected item(s)"
+msgstr "선택된 항목(들)"
+
+#: ui/dialog.py:416
+msgid "Added a folder to the repository"
+msgstr "저장소에 추가된 폴더"
+
+#: ui/stage.py:79
+msgid "Running Stage Command..."
+msgstr "Stage 명령 실행 중..."
+
+#: ui/stage.py:82
+msgid "Completed Stage"
+msgstr "스테이지(Stage) 완료"
+
+#: ui/update.py:60 ui/update.py:109 ui/updateto.py:96
+msgid "Updating..."
+msgstr "업데이트 중..."
+
+#: ui/update.py:62 ui/update.py:127 ui/updateto.py:104
+msgid "Completed Update"
+msgstr "업데이트 완료"
+
+#: ui/widget.py:1134 ui/widget.py:1140 ui/xml/merge.xml.h:20
+msgid "HEAD"
+msgstr ""
+
+#: ui/widget.py:1135 ui/browser.py:101 ui/annotate.py:111 ui/xml/merge.xml.h:19
+#: ui/log.py:56 ui/log.py:384 ui/log.py:675
+msgid "Revision"
+msgstr "리비전(Revision)"
+
+#: ui/widget.py:1136
+msgid "Branch"
+msgstr "브랜치(Branch)"
+
+#: ui/widget.py:1141
+msgid "Number"
+msgstr "번호"
+
+#: ui/widget.py:1144
+msgid "Working Copy"
+msgstr "작업본(Working Copy)"
+
+#: ui/widget.py:1365
+msgid "Repository:"
+msgstr "저장소:"
+
+#: ui/widget.py:1382
+msgid "Branch:"
+msgstr "브랜치:"
+
+#: ui/widget.py:1407 ui/xml/dialogs/certificate.xml.h:8
+msgid "Host:"
+msgstr "호스트:"
+
+#: ui/widget.py:1523
+msgid "Add line:"
+msgstr "줄 추가:"
+
+#: ui/action.py:121 ui/log.py:401 ui/log.py:692
+msgid "Action"
+msgstr ""
+
+#: ui/action.py:121 ui/browser.py:101 ui/add.py:83 ui/commit.py:88
+#: ui/log.py:401 ui/log.py:692 ui/revert.py:78 ui/lock.py:76
+#: ui/markresolved.py:56
+msgid "Path"
+msgstr "경로"
+
+#: ui/action.py:121
+msgid "Mime Type"
+msgstr ""
+
+#: ui/action.py:361
+msgid "Finished"
+msgstr "완료 됨"
+
+#: ui/action.py:365
+#, python-format
+msgid "%s - Finished"
+msgstr "%s - 완료 됨"
+
+#: ui/action.py:391
+msgid "Log Message"
+msgstr "로그 메세지"
+
+#: ui/unstage.py:79
+msgid "Running Unstage Command..."
+msgstr "Unstage 명령 실행 중..."
+
+#: ui/unstage.py:82
+msgid "Completed Unstage"
+msgstr "언스테이지(Unstage) 완료"
+
+#: ui/relocate.py:76
+msgid "The from and to url fields are both required."
+msgstr "from 과 url 필드는 필수입니다."
+
+#: ui/relocate.py:86 ui/xml/relocate.xml.h:1
+msgid "Relocate"
+msgstr "재배지(Relocate)"
+
+#: ui/relocate.py:87
+msgid "Running Relocate Command..."
+msgstr "재배치(Relocate) 명령 실행 중..."
+
+#: ui/relocate.py:94
+msgid "Completed Relocate"
+msgstr "재배치(Relocate) 완료"
+
+#: ui/revprops.py:71 ui/properties.py:158 ui/property_editor.py:162
+msgid "Unable to retrieve properties list"
+msgstr "속성 목록을 가져올 수 없습니다"
+
+#: ui/merge.py:108
+msgid "Running Merge Test"
+msgstr "병합(Merge) 테스트 중"
+
+#: ui/merge.py:109
+msgid "Completed Merge Test"
+msgstr "병합(Merge) 테스트 완료"
+
+#: ui/merge.py:111
+msgid "Running Merge Command"
+msgstr "병합(Merge) 명령 실행 중"
+
+#: ui/merge.py:112 ui/merge.py:574
+msgid "Completed Merge"
+msgstr "병합(Merge) 완료"
+
+#: ui/merge.py:123 ui/merge.py:567
+msgid "Merge"
+msgstr "병합(Merge)"
+
+#: ui/merge.py:482
+msgid "No active branch"
+msgstr "활성 브랜치(Branch) 없음"
+
+#: ui/merge.py:493
+msgid "Author:"
+msgstr "작성자:"
+
+#: ui/merge.py:505 ui/tags.py:172
+msgid "Date:"
+msgstr "날짜:"
+
+#: ui/merge.py:516 ui/xml/browser.xml.h:5 ui/tags.py:115 ui/tags.py:183
+msgid "Revision:"
+msgstr "리비전(Revision):"
+
+#: ui/merge.py:528 ui/tags.py:134 ui/tags.py:195
+msgid "Message:"
+msgstr "메세지:"
+
+#: ui/merge.py:568
+msgid "Running Merge Command..."
+msgstr "병합(Merge) 명령 실행 중..."
+
+#: ui/clone.py:64 ui/export.py:78 ui/export.py:147
+msgid "The repository URL and destination path are both required fields."
+msgstr "저장소 URL과 경로는 필수 입니다."
+
+#: ui/clone.py:73
+msgid "Running Clone Command..."
+msgstr "복제(Clone) 명령 실행 중..."
+
+#: ui/clone.py:80
+msgid "Completed Clone"
+msgstr "복제(Clone) 완료"
+
+#: ui/browser.py:101
+msgid "Size"
+msgstr "용량"
+
+#: ui/browser.py:101 ui/annotate.py:111 ui/log.py:58 ui/log.py:384
+#: ui/log.py:675
+msgid "Author"
+msgstr "작성자"
+
+#: ui/browser.py:360
+msgid "Create folder..."
+msgstr "폴더 생성..."
+
+#: ui/browser.py:365
+msgid "Copy to..."
+msgstr "복사..."
+
+#: ui/browser.py:370
+msgid "Copy URL to clipboard"
+msgstr "클립보드에 URL 복사"
+
+#: ui/browser.py:375
+msgid "Move to..."
+msgstr "이동..."
+
+#: ui/browser.py:492 ui/rename.py:58 ui/rename.py:90 ui/rename.py:119
+msgid "Rename"
+msgstr "이름변경"
+
+#: ui/browser.py:492 ui/rename.py:58
+msgid "New Name:"
+msgstr "새 이름:"
+
+#: ui/browser.py:537
+msgid "Where do you want to copy the selection?"
+msgstr "선택한 내용을 어디에 복사하시겠습니까?"
+
+#: ui/browser.py:538 ui/browser.py:567
+msgid "New Location:"
+msgstr "새 위치:"
+
+#: ui/browser.py:566
+msgid "Where do you want to move the selection?"
+msgstr "선택한 내용을 어디에 이동하시겠습니까?"
+
+#: ui/updateto.py:84
+msgid "Rollback To Revision"
+msgstr "리비전(Revision) 되돌리기"
+
+#: ui/updateto.py:85
+msgid "Rolling Back..."
+msgstr "되돌리는 중..."
+
+#: ui/updateto.py:93
+msgid "Completed Rollback"
+msgstr "되돌리기(Rollback) 완료"
+
+#: ui/updateto.py:95
+msgid "Update To Revision"
+msgstr "리비전(Revision) 업데이트"
+
+#: ui/updateto.py:121
+msgid "What revision/branch do you want to checkout?"
+msgstr "어떤 리비전/브랜치를 체크아웃(checkout) 하시겠습니까?"
+
+#: ui/updateto.py:142
+msgid "Checkout"
+msgstr "체크아웃(Checkout)"
+
+#: ui/updateto.py:143
+#, python-format
+msgid "Checking out %s..."
+msgstr "%s 체크아웃(Checkout) 중..."
+
+#: ui/updateto.py:149
+msgid "Completed Checkout"
+msgstr "체크아웃(Checkout) 완료"
+
+#: ui/annotate.py:71
+msgid "Cannot annotate a directory"
+msgstr "폴더에 주석을 달 수 없습니다"
+
+#: ui/annotate.py:77
+#, python-format
+msgid "Annotate - %s"
+msgstr "주석 달기 - %s"
+
+#: ui/annotate.py:111
+msgid "Line"
+msgstr "줄"
+
+#: ui/annotate.py:111
+msgid "Text"
+msgstr "본문"
+
+#: ui/annotate.py:558
+msgid "Show this revision"
+msgstr "이 리비전 보기"
+
+#: ui/annotate.py:559
+msgid "Annotate this file's revision"
+msgstr "이 파일의 리비전에 주석 달기"
+
+#: ui/annotate.py:565
+msgid "Annotate this revision in another window"
+msgstr "다른 창에서 이 리비전 주석 달기"
+
+#: ui/annotate.py:566
+msgid "Annotate this file's revision in another window"
+msgstr "다른 창에서 이 파일의 리비전 주석 달기"
+
+#: ui/annotate.py:572
+msgid "Show next revision"
+msgstr "다음 리비전 보기"
+
+#: ui/annotate.py:573
+msgid "Annotate the revision following this one"
+msgstr "이 리비전에 주석 달기"
+
+#: ui/annotate.py:579 ui/log.py:999
+msgid "View diff against working copy"
+msgstr "작업본과 차이점 보기"
+
+#: ui/annotate.py:580
+msgid "View this revision's diff against working copy"
+msgstr "작업본과 이 리비전의 차이점 보기"
+
+#: ui/annotate.py:586
+msgid "Compare against working copy"
+msgstr "작업본과 비교하기"
+
+#: ui/annotate.py:587
+msgid "Compare this revision against working copy"
+msgstr "작업본과 이 리비전 비교하기"
+
+#: ui/annotate.py:594
+msgid "View this revision's diff against previous revision"
+msgstr "이전 리비전과 이 리비전 차이점 보기"
+
+#: ui/annotate.py:600
+msgid "Compare against previous revision"
+msgstr "이전 리비전과 비교하기"
+
+#: ui/annotate.py:601
+msgid "Compare this revision against previous revision"
+msgstr "이전 리비전과 이 리비전 비교하기"
+
+#: ui/annotate.py:607 ui/log.py:1009
+msgid "View diff between revisions"
+msgstr "리비전 간 차이점 보기"
+
+#: ui/annotate.py:608
+msgid "View diff between selected revisions"
+msgstr "선택한 리비전 간 차이점 보기"
+
+#: ui/annotate.py:613 ui/log.py:1024
+msgid "Compare revisions"
+msgstr "리비전 비교하기"
+
+#: ui/annotate.py:614
+msgid "Compare selected revisions"
+msgstr "선택한 리비전 비교하기"
+
+#: ui/add.py:84 ui/commit.py:88 ui/revert.py:78 ui/lock.py:76
+#: ui/markresolved.py:57
 msgid "Extension"
 msgstr "확장"
 
-#: ui/revert.py:106 ui/lock.py:111 ui/unlock.py:67 ui/add.py:111
-#: ui/commit.py:131
+#: ui/add.py:117 ui/commit.py:134 ui/unlock.py:71 ui/revert.py:99
+#: ui/lock.py:116
 msgid "Loading..."
-msgstr "로딩 중 ..."
+msgstr "로딩 중..."
 
-#: ui/revert.py:110 ui/lock.py:114 ui/unlock.py:90 ui/add.py:133
+#: ui/add.py:139 ui/unlock.py:95 ui/revert.py:103 ui/lock.py:119
 #, python-format
 msgid "Found %d item(s)"
 msgstr "%d 개의 항목을 찾았습니다."
 
-#: ui/revert.py:176 ui/revert.py:202
-msgid "Running Revert Command..."
-msgstr "되돌리기 명령 실행 중 ..."
+#: ui/add.py:223 ui/add.py:248
+msgid "Running Add Command..."
+msgstr "추가(Add) 명령 실행 중..."
 
-#: ui/revert.py:178 ui/revert.py:204
-msgid "Completed Revert"
-msgstr "되돌리기 완료"
+#: ui/add.py:225 ui/add.py:250
+msgid "Completed Add"
+msgstr "추가(Add) 완료"
 
-#: ui/remotes.py:61
-msgid "Remote Repository Manager"
-msgstr "원격 저장소 관리자"
+#: ui/ignore.py:105
+msgid "Ignore file:"
+msgstr "파일 무시:"
 
-#: ui/remotes.py:62
-msgid "<b>Remote Repositories</b>"
-msgstr "<b>원격 저장소</b>"
-
-#: ui/remotes.py:68 ui/properties.py:64 ui/property_editor.py:114
-msgid "Name"
-msgstr "이름"
-
-#: ui/remotes.py:68
-msgid "Host"
-msgstr "호스트(Host)"
-
-#: ui/remotes.py:123 ui/tags.py:238
-#, python-format
-msgid "Are you sure you want to delete %s?"
-msgstr "%s 을(를) 삭제 하시겠습니까?"
-
-#: ui/unstage.py:74
-msgid "Running Unstage Command..."
-msgstr "Unstage 명령 실행 중 ..."
-
-#: ui/unstage.py:77
-msgid "Completed Unstage"
-msgstr "Unstage 완료"
-
-#: ui/reset.py:97
-msgid "Running Reset Command..."
-msgstr "Reset Command 실행 중 ..."
-
-#: ui/reset.py:104
-msgid "Completed Reset"
-msgstr "재설정(Reset) 완료"
-
-#: ui/markresolved.py:51 ui/commit.py:86
+#: ui/commit.py:89 ui/markresolved.py:57
 msgid "Text Status"
-msgstr "텍스트 상태"
+msgstr "본문 상태"
 
-#: ui/markresolved.py:51 ui/commit.py:86
+#: ui/commit.py:89 ui/markresolved.py:57
 msgid "Property Status"
 msgstr "속성 상태"
 
-#: ui/markresolved.py:77
-msgid "Running Resolved Command..."
-msgstr "Resolved Command 실행 중 ..."
-
-#: ui/markresolved.py:80
-msgid "Completed Mark as Resolved"
-msgstr "완료됨으로 표시됨"
-
-#: ui/ignore.py:101
-msgid "Ignore file:"
-msgstr "파일 무시 :"
-
-#: ui/stage.py:74
-msgid "Running Stage Command..."
-msgstr "Stage 명령 실행 중 ..."
-
-#: ui/stage.py:77
-msgid "Completed Stage"
-msgstr "Stage 완료"
-
-#: ui/lock.py:72
-msgid "Locked"
-msgstr "잠김"
-
-#: ui/lock.py:121
-msgid "Yes"
-msgstr "예"
-
-#: ui/lock.py:156
-msgid "Get Lock"
-msgstr "잠금 가져 오기"
-
-#: ui/lock.py:157
-msgid "Running Lock Command..."
-msgstr "잠금 명령 실행 중 ..."
-
-#: ui/lock.py:166
-msgid "Completed Lock"
-msgstr "잠금 완료"
-
-#: ui/log.py:51 ui/log.py:375 ui/log.py:662 ui/xml/merge.xml.h:19
-#: ui/widget.py:1038 ui/browser.py:91 ui/annotate.py:131 ui/annotate.py:235
-msgid "Revision"
-msgstr "리비전"
-
-#: ui/log.py:52 ui/log.py:376 ui/log.py:663 ui/browser.py:91 ui/dialog.py:51
-#: ui/annotate.py:132 ui/annotate.py:236
-msgid "Date"
-msgstr "날짜"
-
-#: ui/log.py:53 ui/log.py:375 ui/log.py:662 ui/browser.py:91 ui/annotate.py:131
-#: ui/annotate.py:235
-msgid "Author"
-msgstr "저자"
-
-#: ui/log.py:126
+#: ui/commit.py:269
 #, python-format
-msgid "Log - %s"
-msgstr "로그 - %s"
+msgid "Found %(changed)d changed and %(unversioned)d unversioned item(s)"
+msgstr ""
+"%(changed)d 개의 변경된 항목 및 %(unversioned)d 개의 버전 없는 항목을 찾았습"
+"니다"
 
-#: ui/log.py:307 ui/log.py:308 ui/xml/log.xml.h:7
-msgid "N/A"
-msgstr "해당 없음"
+#: ui/commit.py:321 ui/commit.py:389
+msgid "Running Commit Command..."
+msgstr "커밋(Commit) 명령 실행 중..."
 
-#: ui/log.py:376 ui/log.py:663 ui/xml/dialogs/message_box.xml.h:1
-#: ui/dialog.py:51
-msgid "Message"
-msgstr "메시지"
+#: ui/commit.py:334 ui/commit.py:398
+msgid "Completed Commit"
+msgstr "커밋(Commit) 완료"
 
-#: ui/log.py:377
-msgid "Color"
-msgstr "색상"
-
-#: ui/log.py:392 ui/log.py:678 ui/action.py:120
-msgid "Action"
-msgstr "동작"
-
-#: ui/log.py:393
-msgid "Copy From Path"
-msgstr "경로에서 복사"
-
-#: ui/log.py:393
-msgid "Copy From Revision"
-msgstr "리비전에서 복사"
-
-#: ui/log.py:662
-msgid "Graph"
-msgstr "그래프"
-
-#: ui/log.py:929 ui/browser.py:322 ui/dialog.py:110
-msgid "_Select"
-msgstr "선택(_S)"
-
-#: ui/log.py:983
-msgid "View diff against working copy"
-msgstr "작업본(working copy)과 비교보기"
-
-#: ui/log.py:993
-msgid "View diff between revisions"
-msgstr "버전 간 차이점보기"
-
-#: ui/log.py:998
-msgid "Compare with working copy"
-msgstr "작업본(working copy)과 비교"
-
-#: ui/log.py:1008
-msgid "Compare revisions"
-msgstr "버전 비교"
-
-#: ui/log.py:1014
-msgid "Show changes against previous revision"
-msgstr "이전 버전에 대한 변경 사항 표시"
-
-#: ui/log.py:1020
-msgid "Show changes between revisions"
-msgstr "버전간 변경 사항 표시"
-
-#: ui/log.py:1025
-msgid "Update to this revision"
-msgstr "이 버전으로 업데이트"
-
-#: ui/log.py:1026
-msgid "Update the selected path to this revision"
-msgstr "선택한 경로를 이 버전으로 업데이트"
-
-#: ui/log.py:1031
-msgid "Revert changes from this revision"
-msgstr "이 버전의 변경 사항 되돌리기"
-
-#: ui/log.py:1032
-msgid "Update the selected path by reverse merging the changes"
-msgstr "변경 사항을 역 병합하여 선택한 경로 업데이트"
-
-#: ui/log.py:1037
-msgid "Copy to clipboard"
-msgstr "클립 보드에 복사"
-
-#: ui/log.py:1038
-msgid "Copy to clipboard the full data of these revisions"
-msgstr "이 버전의 전체 데이터를 클립 보드에 복사"
-
-#: ui/log.py:1042 ui/log.py:1046
-msgid "Edit author..."
-msgstr "작성자 수정 ..."
-
-#: ui/log.py:1050
-msgid "Edit log message..."
-msgstr "로그 메시지 수정 ..."
-
-#: ui/log.py:1054
-msgid "Edit revision properties..."
-msgstr "버전 속성 편집 ..."
-
-#: ui/log.py:1334
-msgid "Edit author"
-msgstr "작성자 수정"
-
-#: ui/log.py:1346
-msgid "Edit log message"
-msgstr "로그 메시지 편집"
-
-#: ui/unlock.py:46 ui/unlock.py:108
-msgid "Unlock"
-msgstr "잠금 해제"
-
-#: ui/unlock.py:109
-msgid "Running Unlock Command..."
-msgstr "잠금 해제 명령 실행 중 ..."
-
-#: ui/unlock.py:112
-msgid "Completed Unlock"
-msgstr "잠금 해제 완료"
-
-#: ui/__init__.py:52
-msgid ""
-"You must specify a version control system using the --vcs [svn|git] option"
-msgstr "--vcs [svn | git] 옵션을 사용하여 버전 제어 시스템을 지정해야합니다."
-
-#: ui/clean.py:67
-msgid "Running Clean Command..."
-msgstr "비우기(Cleanup) 명령 실행 중 ..."
-
-#: ui/clean.py:77
-msgid "Completed Clean"
-msgstr "비우기(Cleanup) 완료"
-
-#: ui/action.py:120
-msgid "Mime Type"
-msgstr "마임 유형"
-
-#: ui/action.py:360
-msgid "Finished"
-msgstr "완료"
-
-#: ui/action.py:364
+#: ui/export.py:51 ui/export.py:130
 #, python-format
-msgid "%s - Finished"
-msgstr "%s - 완료"
+msgid "Export - %s"
+msgstr "내보내기 - %s"
 
-#: ui/action.py:386
-msgid "Log Message"
-msgstr "로그 메시지"
+#: ui/export.py:98 ui/export.py:167
+msgid "Export"
+msgstr "내보내기(Export)"
 
-#: ui/xml/revert.xml.h:2 ui/xml/commit.xml.h:2 ui/xml/relocate.xml.h:2
-#: ui/xml/update.xml.h:2 ui/xml/settings.xml.h:2 ui/xml/add.xml.h:2
-#: ui/xml/dialogs/delete_confirmation.xml.h:2
-#: ui/xml/dialogs/name_email_prompt.xml.h:2
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:2
-#: ui/xml/dialogs/previous_messages.xml.h:2 ui/xml/dialogs/property.xml.h:2
-#: ui/xml/dialogs/create_folder.xml.h:2 ui/xml/dialogs/loading.xml.h:2
-#: ui/xml/ignore.xml.h:2 ui/xml/clean.xml.h:2 ui/xml/properties.xml.h:2
-#: ui/xml/notification.xml.h:2 ui/xml/git-update.xml.h:1 ui/xml/lock.xml.h:2
-#: ui/xml/import.xml.h:2 ui/xml/reset.xml.h:2 ui/dialog.py:109 ui/dialog.py:281
-#: ui/dialog.py:301
-msgid "_Cancel"
-msgstr "취소(_C)"
+#: ui/export.py:99 ui/export.py:168
+msgid "Running Export Command..."
+msgstr "내보내기(Export) 명령 실행 중..."
 
-#: ui/xml/revert.xml.h:3 ui/xml/commit.xml.h:3 ui/xml/relocate.xml.h:3
-#: ui/xml/update.xml.h:3 ui/xml/settings.xml.h:3 ui/xml/add.xml.h:3
-#: ui/xml/dialogs/name_email_prompt.xml.h:3
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:3
-#: ui/xml/dialogs/message_box.xml.h:2 ui/xml/dialogs/previous_messages.xml.h:3
-#: ui/xml/dialogs/property.xml.h:3 ui/xml/dialogs/create_folder.xml.h:3
-#: ui/xml/ignore.xml.h:3 ui/xml/clean.xml.h:3 ui/xml/notification.xml.h:3
-#: ui/xml/git-update.xml.h:2 ui/xml/lock.xml.h:3 ui/xml/import.xml.h:3
-#: ui/xml/reset.xml.h:3
-msgid "_OK"
-msgstr "확인(_O)"
-
-#: ui/xml/revert.xml.h:4 ui/xml/commit.xml.h:8 ui/xml/add.xml.h:5
-#: ui/xml/lock.xml.h:5
-msgid "Select / Deselect all"
-msgstr "모두 선택 / 선택 취소"
-
-#: ui/xml/commit.xml.h:4 ui/xml/log.xml.h:2
-msgid "Refresh"
-msgstr "새로 고침"
-
-#: ui/xml/commit.xml.h:5 ui/xml/dialogs/previous_messages.xml.h:1
-#: ui/xml/lock.xml.h:7 ui/xml/import.xml.h:5
-msgid "Previous Messages"
-msgstr "이전 메시지"
-
-#: ui/xml/commit.xml.h:6 ui/xml/dialogs/create_folder.xml.h:5
-msgid "<b>Add Message</b>"
-msgstr "<b>메시지 추가</b>"
-
-#: ui/xml/commit.xml.h:7
-msgid "Show unversioned files"
-msgstr "버전이 없는 파일 표시"
-
-#: ui/xml/commit.xml.h:9
-msgid "<b>Changed Files</b> (double-click to compare with base)"
-msgstr "<b>변경된 파일</b> (기본과 비교하려면 두 번 클릭)"
-
-#: ui/xml/commit.xml.h:10
-msgid "<b>Commit to:</b>"
-msgstr "<b>커밋 :</b>"
-
-#: ui/xml/property_editor.xml.h:1
-msgid "Property Editor"
-msgstr "속성 편집기"
-
-#: ui/xml/property_editor.xml.h:2 ui/xml/browser.xml.h:3 ui/xml/manager.xml.h:1
-#: ui/xml/dialogs/error_notification.xml.h:2 ui/xml/log.xml.h:1
-#: ui/xml/annotate.xml.h:3
-msgid "_Close"
-msgstr "닫기(_C)"
-
-#: ui/xml/property_editor.xml.h:3
-msgid "Close this dialog."
-msgstr "이 대화 상자를 닫습니다."
-
-#: ui/xml/property_editor.xml.h:4
-msgid "_Refresh"
-msgstr "새로 고침(_R)"
-
-#: ui/xml/property_editor.xml.h:5
-msgid "Refresh the list of properties."
-msgstr "속성 목록을 새로 고칩니다."
-
-#: ui/xml/property_editor.xml.h:6
-msgid "_New"
-msgstr "새 속성(_N)"
-
-#: ui/xml/property_editor.xml.h:7
-msgid "Add a new property."
-msgstr "새 속성을 추가합니다."
-
-#: ui/xml/property_editor.xml.h:8
-msgid "<b>Remote URI:</b>"
-msgstr "<b>원격 URI :</b>"
-
-#: ui/xml/property_editor.xml.h:9
-msgid "<b>Working Copy:</b>"
-msgstr "<b>작업본(working copy):</b>"
+#: ui/export.py:110 ui/export.py:176
+msgid "Completed Export"
+msgstr "내보내기(Export) 완료"
 
 #: ui/xml/browser.xml.h:2
 msgid "Load/Refresh"
-msgstr "불러오기/새로 고침"
+msgstr "불러오기/새로고침"
 
-#: ui/xml/browser.xml.h:4 ui/tags.py:108 ui/tags.py:176 ui/merge.py:508
-msgid "Revision:"
-msgstr "리비전(Revision):"
+#: ui/xml/browser.xml.h:3 ui/xml/property_editor.xml.h:2
+#: ui/xml/annotate.xml.h:3 ui/xml/log.xml.h:1
+#: ui/xml/dialogs/error_notification.xml.h:2 ui/xml/manager.xml.h:1
+msgid "_Close"
+msgstr "닫기(_C)"
 
-#: ui/xml/browser.xml.h:5
+#: ui/xml/browser.xml.h:4
+msgid "_Create folder here"
+msgstr "여기에 새 폴더 생성(_C)"
+
+#: ui/xml/browser.xml.h:6
 msgid "URL:"
-msgstr "URL :"
-
-#: ui/xml/relocate.xml.h:1 ui/relocate.py:82
-msgid "Relocate"
-msgstr "재배치"
-
-#: ui/xml/relocate.xml.h:4
-msgid "To:"
 msgstr ""
-
-#: ui/xml/relocate.xml.h:5
-msgid "From:"
-msgstr ""
-
-#: ui/xml/relocate.xml.h:6
-msgid "<b>Change the repository of your working copy</b>"
-msgstr "<b>작업본(working copy)의 저장소 변경</b>"
-
-#: ui/xml/update.xml.h:4
-msgid "Rollback to specified revision number"
-msgstr "지정된 리비전(Revision) 번호로 롤백"
-
-#: ui/xml/update.xml.h:5
-msgid "Omit Externals"
-msgstr "외부 생략"
-
-#: ui/xml/update.xml.h:6 ui/xml/merge.xml.h:29
-msgid "Recursive"
-msgstr "재귀적으로"
-
-#: ui/xml/update.xml.h:7 ui/xml/merge.xml.h:30 ui/xml/git-update.xml.h:7
-#: ui/xml/reset.xml.h:13
-msgid "<b>Options</b>"
-msgstr "<b>옵션</b>"
-
-#: ui/xml/update.xml.h:8 ui/xml/reset.xml.h:14
-msgid "<b>Revision</b>"
-msgstr "<b>리비전(Revision)</b>"
 
 #: ui/xml/merge.xml.h:1
 msgid "Merge Assistant"
@@ -1003,7 +1070,8 @@ msgstr "브랜치 재 통합"
 msgid ""
 "Choose this method if you wish to merge two different branches into your "
 "working copy."
-msgstr "두 개의 다른 분기를 작업본(working copy)에 병합하려면이 방법을 선택하십시오."
+msgstr ""
+"두 개의 다른 분기를 작업본(working copy)에 병합하려면이 방법을 선택하십시오."
 
 #: ui/xml/merge.xml.h:5
 msgid "Merge two different trees"
@@ -1013,7 +1081,9 @@ msgstr "두 개의 다른 트리 병합"
 msgid ""
 "Choose this method if you have made some changes to a branch and wish to "
 "merge your changes with another branch."
-msgstr "분기를 일부 변경하고 변경 사항을 다른 분기와 병합하려는 경우이 방법을 선택하십시오."
+msgstr ""
+"분기를 일부 변경하고 변경 사항을 다른 분기와 병합하려는 경우이 방법을 선택하"
+"십시오."
 
 #: ui/xml/merge.xml.h:7
 msgid "Merge a range of revisions"
@@ -1036,13 +1106,14 @@ msgid ""
 "Example: 4-7,9,11,15-HEAD\n"
 "\n"
 "To merge all revisions, leave the box empty."
-msgstr "로그 대화 상자를 사용하여 병합하려는 리비전(Revision)을 선택하십시오. "
-"또는 각 리비전(Revision)을 쉼표로 구분하여 수동으로 작성하십시오. "
-"대시로 버전 범위를 지정할 수 있습니다.\n"
+msgstr ""
+"로그 대화 상자를 사용하여 병합하려는 리비전을 선택하거나 각 리비전을 쉼표로 "
+"구분하여 수동으로 작성하십시오. \n"
+"다음과 같이 대시로 개정 범위를 지정할 수 있습니다.\n"
 "\n"
 "예 : 4-7,9,11,15-HEAD\n"
 "\n"
-"모든 리비전(Revision)을 병합하려면 상자를 비워 둡니다."
+"모든 개정을 병합하려면 상자를 비워 둡니다."
 
 #: ui/xml/merge.xml.h:15
 msgid "Show log"
@@ -1060,17 +1131,13 @@ msgstr "<b>병합할 URL</b>"
 msgid "Step 2: Merge a Range of Revisions"
 msgstr "2 단계 : 다수의 리비전(Revision) 병합"
 
-#: ui/xml/merge.xml.h:20 ui/widget.py:1037 ui/widget.py:1043
-msgid "HEAD"
-msgstr ""
-
 #: ui/xml/merge.xml.h:21
 msgid "<b>To: (URL and revision to merge)</b>"
-msgstr "<b>받는 사람 : (통합 할 URL 및 리비전)</b>"
+msgstr "<b>To : (병합 할 URL 및 리비전)</b>"
 
 #: ui/xml/merge.xml.h:22
 msgid "<b>From: (URL and revision to merge)</b>"
-msgstr "<b>보낸 사람 : (통합 할 URL 및 리비전)</b>"
+msgstr "<b>From: (병합 할 URL 및 리비전)</b>"
 
 #: ui/xml/merge.xml.h:23
 msgid "Step 2: Merge two different trees"
@@ -1096,13 +1163,197 @@ msgstr "병합 만 기록"
 msgid "Ignore ancestry"
 msgstr "원본 무시"
 
+#: ui/xml/merge.xml.h:29 ui/xml/update.xml.h:6
+msgid "Recursive"
+msgstr "재귀적으로"
+
+#: ui/xml/merge.xml.h:30 ui/xml/reset.xml.h:13 ui/xml/git-update.xml.h:7
+#: ui/xml/update.xml.h:7
+msgid "<b>Options</b>"
+msgstr "<b>옵션</b>"
+
 #: ui/xml/merge.xml.h:31
 msgid "Step 3: Final Options"
 msgstr "3 단계 : 최종 옵션"
 
+#: ui/xml/reset.xml.h:3 ui/xml/lock.xml.h:3 ui/xml/revert.xml.h:3
+#: ui/xml/notification.xml.h:3 ui/xml/add.xml.h:3 ui/xml/import.xml.h:3
+#: ui/xml/clean.xml.h:3 ui/xml/settings.xml.h:3 ui/xml/dialogs/property.xml.h:3
+#: ui/xml/dialogs/message_box.xml.h:2 ui/xml/dialogs/create_folder.xml.h:3
+#: ui/xml/dialogs/name_email_prompt.xml.h:3
+#: ui/xml/dialogs/previous_messages.xml.h:3
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:3 ui/xml/git-update.xml.h:2
+#: ui/xml/commit.xml.h:3 ui/xml/update.xml.h:3 ui/xml/relocate.xml.h:3
+#: ui/xml/ignore.xml.h:3
+msgid "_OK"
+msgstr "확인(_O)"
+
+#: ui/xml/reset.xml.h:4
+msgid "None"
+msgstr ""
+
+#: ui/xml/reset.xml.h:5
+msgid ""
+"<i>Merge</i> - Resets the index to match the tree recorded by the named "
+"commit,\n"
+"and updates the files that are different between the named commit\n"
+"and the current commit in the working tree"
+msgstr ""
+"<i>Merge</i> - 명명된 커밋으로 기록된 트리와 일치하도록 인덱스를 재설정하"
+"고,\n"
+"다른 파일을 현재 작업중인 트리에 업데이트 합니다"
+
+#: ui/xml/reset.xml.h:8
+msgid ""
+"<i>Hard</i> - Matches the working tree and index to that of the \n"
+"tree being switched to"
+msgstr "<i>Hard</i> - 작업 트리 및 색인을 전환되는 트리의 색인과 일치시킵니다"
+
+#: ui/xml/reset.xml.h:10
+msgid ""
+"<i>Soft</i> - Does not touch the index file or working tree at all, \n"
+"but requires them to be in good working order"
+msgstr ""
+"<i>Soft</i> - 색인 파일이나 작업 트리를 전혀 건드리지 않지만 제대로 작동해야 "
+"합니다"
+
+#: ui/xml/reset.xml.h:12
+msgid "<i>Mixed</i> - Reset the index but not the working tree"
+msgstr "<i>Mixed</i> - 색인을 재설정하지만 작업 트리는 재설정하지 않습니다"
+
+#: ui/xml/reset.xml.h:14 ui/xml/annotate.xml.h:4 ui/xml/update.xml.h:8
+msgid "<b>Revision</b>"
+msgstr "<b>리비전(Revision)</b>"
+
+#: ui/xml/reset.xml.h:15
+msgid "<b>Path</b>"
+msgstr "<b>경로</b>"
+
+#: ui/xml/reset.xml.h:16
+msgid "Reset current HEAD to specified state."
+msgstr "현재 HEAD를 지정된 상태로 재설정합니다."
+
+#: ui/xml/reset.xml.h:17
+msgid "<b>Reset your Repository</b>"
+msgstr "<b>저장소 재설정</b>"
+
+#: ui/xml/property_editor.xml.h:1
+msgid "Property Editor"
+msgstr "속성 편집기"
+
+#: ui/xml/property_editor.xml.h:3
+msgid "Close this dialog."
+msgstr "이 대화상자 닫기."
+
+#: ui/xml/property_editor.xml.h:4
+msgid "_Refresh"
+msgstr "새로고침(_R)"
+
+#: ui/xml/property_editor.xml.h:5
+msgid "Refresh the list of properties."
+msgstr "속성 목록 새로 고침."
+
+#: ui/xml/property_editor.xml.h:6
+msgid "_New"
+msgstr "새 속성(_N)"
+
+#: ui/xml/property_editor.xml.h:7
+msgid "Add a new property."
+msgstr "새 속성 추가."
+
+#: ui/xml/property_editor.xml.h:8
+msgid "<b>Remote URI:</b>"
+msgstr "<b>원격지 주소(Remote URI):</b>"
+
+#: ui/xml/property_editor.xml.h:9
+msgid "<b>Working Copy:</b>"
+msgstr "<b>작업본(Working Copy):</b>"
+
+#: ui/xml/lock.xml.h:1
+msgid "Lock Files"
+msgstr "잠금 파일"
+
+#: ui/xml/lock.xml.h:4
+msgid "Steal the locks"
+msgstr ""
+
+#: ui/xml/lock.xml.h:5 ui/xml/revert.xml.h:4 ui/xml/add.xml.h:5
+#: ui/xml/commit.xml.h:8
+msgid "Select / Deselect all"
+msgstr "전체 선택/해제"
+
+#: ui/xml/lock.xml.h:6
+msgid "<b>Files to lock</b>"
+msgstr "<b>잠글 파일</b>"
+
+#: ui/xml/lock.xml.h:7 ui/xml/import.xml.h:5
+#: ui/xml/dialogs/previous_messages.xml.h:1 ui/xml/commit.xml.h:5
+msgid "Previous Messages"
+msgstr "이전 메세지"
+
+#: ui/xml/lock.xml.h:8
+msgid "<b>Please describe why you are locking these files</b>"
+msgstr "<b>이 파일을 잠그는 이유를 설명하세요</b>"
+
+#: ui/xml/notification.xml.h:1
+msgid "Notification Messages"
+msgstr "알림 메세지"
+
+#: ui/xml/notification.xml.h:4 ui/xml/annotate.xml.h:2
+msgid "Save _As"
+msgstr "다른 이름으로 저장(_A)"
+
+#: ui/xml/add.xml.h:4
+msgid "Show ignored files"
+msgstr "제외한(ignored) 파일 보기"
+
+#: ui/xml/annotate.xml.h:1
+msgid "Annotate"
+msgstr "주석 달기"
+
+#: ui/xml/import.xml.h:4
+msgid "Include ignored files"
+msgstr "제외(ignored)한 파일 포함하기"
+
+#: ui/xml/import.xml.h:6
+msgid "<b>Import Message</b>"
+msgstr "<b>가져오기 메세지</b>"
+
+#: ui/xml/import.xml.h:7
+msgid "<b>Repository</b>"
+msgstr "<b>저장소</b>"
+
+#: ui/xml/clean.xml.h:4
+msgid "Force"
+msgstr "강제"
+
+#: ui/xml/clean.xml.h:5
+msgid "Dry run"
+msgstr "실행 테스트"
+
+#: ui/xml/clean.xml.h:6
+msgid "Remove only ignored files"
+msgstr "제외(ignored)한 파일만 제거"
+
+#: ui/xml/clean.xml.h:7
+msgid "Remove ignored files, too"
+msgstr "제외(ignored)한 파일도 제거"
+
+#: ui/xml/clean.xml.h:8
+msgid "Remove directories"
+msgstr "폴더 제거"
+
+#: ui/xml/clean.xml.h:9
+msgid "Remove untracked files from the working tree"
+msgstr "작업 트리에서 추적하지 않는 파일 삭제"
+
+#: ui/xml/clean.xml.h:10
+msgid "<b>Clean your Repository</b>"
+msgstr "<b>저장소 비우기(Clean)</b>"
+
 #: ui/xml/settings.xml.h:4
 msgid "<b>Version Control Systems</b>"
-msgstr "<b> 버전 관리 시스템 </b>"
+msgstr "<b>버전 관리 시스템</b>"
 
 #: ui/xml/settings.xml.h:5
 msgid "Enable Subversion"
@@ -1113,280 +1364,249 @@ msgid "Enable Git"
 msgstr "Git 활성화"
 
 #: ui/xml/settings.xml.h:7
-msgid "Show RabbitVCS debugging tools"
-msgstr "RabbitVCS 디버깅 도구 표시"
-
-#: ui/xml/settings.xml.h:8
-msgid "The debug menu is used to diagnose problems with RabbitVCS itself"
-msgstr "디버그 메뉴는 RabbitVCS 자체의 문제를 진단하는 데 사용됩니다."
-
-#: ui/xml/settings.xml.h:9
 msgid "Enable emblems"
 msgstr "엠블럼 활성화"
 
-#: ui/xml/settings.xml.h:10
+#: ui/xml/settings.xml.h:8
 msgid "Enable recursive status checks"
 msgstr "재귀 상태 확인 사용"
 
-#: ui/xml/settings.xml.h:11
+#: ui/xml/settings.xml.h:9
 msgid "Enable file attributes"
 msgstr "파일 속성 활성화"
 
+#: ui/xml/settings.xml.h:10
+msgid "Date/time format"
+msgstr "날짜/시간 형식"
+
+#: ui/xml/settings.xml.h:11
+msgid "Highlight source syntax"
+msgstr "소스코드 하이라이트"
+
 #: ui/xml/settings.xml.h:12
-msgid "<b>RabbitVCS</b>"
-msgstr "<b>RabbitVCS</b>"
+msgid "Highlight source lines according to language syntax"
+msgstr "언어 문법에 따라 소스 코드 하이라이팅"
 
 #: ui/xml/settings.xml.h:13
+msgid "Colorize commits and authors"
+msgstr "커밋과 작성자 색상 표시"
+
+#: ui/xml/settings.xml.h:14
+msgid ""
+"Set a unique background color of lines belonging to the same commit. Apply "
+"to line author's too"
+msgstr "동일한 커밋의 라인 배경색을 설정합니다. 해당 라인 저자에게도 적용"
+
+#: ui/xml/settings.xml.h:15
+msgid "Show RabbitVCS debugging tools"
+msgstr "디버깅 도구 보기"
+
+#: ui/xml/settings.xml.h:16
+msgid "The debug menu is used to diagnose problems with RabbitVCS itself"
+msgstr "디버그 메뉴는 RabbitVCS 자체의 문제를 진단하는 데 사용됩니다"
+
+#: ui/xml/settings.xml.h:17
+msgid "<b>RabbitVCS</b>"
+msgstr ""
+
+#: ui/xml/settings.xml.h:18
+msgid "<b>Default Commit Message</b>"
+msgstr "<b>기본 커밋 메세지</b>"
+
+#: ui/xml/settings.xml.h:19
 msgid "General"
 msgstr "일반"
 
-#: ui/xml/settings.xml.h:14
+#: ui/xml/settings.xml.h:20
 msgid "<b>Configure the program to resolve conflicted files.</b>"
 msgstr "<b>충돌 파일을 해결하도록 프로그램을 구성합니다.</b>"
 
-#: ui/xml/settings.xml.h:16
+#: ui/xml/settings.xml.h:22
 msgid ""
 "Use the following macros to configure the merge tool:\n"
 "%base       - The common ancestor of the two files to be merged.\n"
 "%mine      - The file you modified in your working copy.\n"
 "%theirs    - The file being merged into your working copy.\n"
 "%merged - The file to store the merged result."
-msgstr "다음 매크로를 사용하여 병합 도구를 구성하십시오.\n"
+msgstr ""
+"다음 매크로를 사용하여 병합 도구를 구성하십시오.\n"
 "% base     - 병합 할 두 파일의 공통 조상입니다.\n"
 "% mine     - 작업본(working copy)에서 수정 한 파일입니다.\n"
 "% theirs   - 작업본(working copy)에 병합되는 파일입니다.\n"
 "% merged   - 병합 된 결과를 저장할 파일입니다."
 
-#: ui/xml/settings.xml.h:21
+#: ui/xml/settings.xml.h:27
 msgid "Browse..."
 msgstr "검색..."
 
-#: ui/xml/settings.xml.h:22
+#: ui/xml/settings.xml.h:28
 msgid "Show new version on the left side"
 msgstr "왼쪽에 새 버전 표시"
 
-#: ui/xml/settings.xml.h:23
+#: ui/xml/settings.xml.h:29
 msgid "<b>Program used to compare files</b>"
 msgstr "<b>파일 비교에 사용되는 프로그램</b>"
 
-#: ui/xml/settings.xml.h:24
+#: ui/xml/settings.xml.h:30
 msgid "External Programs"
 msgstr "외부 프로그램"
 
-#: ui/xml/settings.xml.h:25
+#: ui/xml/settings.xml.h:31
 msgid "Clear"
 msgstr "지우기"
 
-#: ui/xml/settings.xml.h:26
+#: ui/xml/settings.xml.h:32
 msgid "Clear your authentication information"
 msgstr "인증 정보 지우기"
 
-#: ui/xml/settings.xml.h:27
+#: ui/xml/settings.xml.h:33
 msgid "<b>Authentication</b>"
 msgstr "<b>인증</b>"
 
-#: ui/xml/settings.xml.h:28
+#: ui/xml/settings.xml.h:34
 msgid "Number of messages to remember"
 msgstr "기억할 메시지 수"
 
-#: ui/xml/settings.xml.h:29
+#: ui/xml/settings.xml.h:35
 msgid "<b>Log Messages</b>"
 msgstr "<b>로그 메시지</b>"
 
-#: ui/xml/settings.xml.h:30
+#: ui/xml/settings.xml.h:36
 msgid "Number of URLs to remember"
 msgstr "기억할 URL 수"
 
-#: ui/xml/settings.xml.h:31
+#: ui/xml/settings.xml.h:37
 msgid "<b>URL History</b>"
 msgstr "<b>URL 기록</b>"
 
-#: ui/xml/settings.xml.h:32
+#: ui/xml/settings.xml.h:38
 msgid "Saved Data"
 msgstr "저장된 데이터"
 
-#: ui/xml/settings.xml.h:33
+#: ui/xml/settings.xml.h:39
 msgid "<b>Logging Options</b>"
 msgstr "<b>로깅 옵션</b>"
 
-#: ui/xml/settings.xml.h:34
+#: ui/xml/settings.xml.h:40
 msgid "Minimum level to log:"
 msgstr "로그 최소 수준 :"
 
-#: ui/xml/settings.xml.h:35
+#: ui/xml/settings.xml.h:41
 msgid "Type:"
 msgstr "유형:"
 
-#: ui/xml/settings.xml.h:36
+#: ui/xml/settings.xml.h:42
 msgid "Logging"
 msgstr "로그 기록"
 
-#: ui/xml/settings.xml.h:37
+#: ui/xml/settings.xml.h:43
 msgid "Refresh Information"
 msgstr "정보 새로 고침"
 
-#: ui/xml/settings.xml.h:38
+#: ui/xml/settings.xml.h:44
 msgid "Restart Checker"
 msgstr "검사기 재시작"
 
-#: ui/xml/settings.xml.h:39
+#: ui/xml/settings.xml.h:45
 msgid "Stop Checker"
 msgstr "검사기 중지"
 
-#: ui/xml/settings.xml.h:40
+#: ui/xml/settings.xml.h:46
 msgid "<b>Other Information</b>"
 msgstr "<b>기타 정보</b>"
 
-#: ui/xml/settings.xml.h:41
+#: ui/xml/settings.xml.h:47
 msgid "<b>Checker type:</b>"
 msgstr "<b>검사기 유형 :</b>"
 
-#: ui/xml/settings.xml.h:42 ui/settings.py:43
+#: ui/xml/settings.xml.h:48 ui/settings.py:48
 msgid "Unknown"
 msgstr "알 수 없는"
 
-#: ui/xml/settings.xml.h:43
+#: ui/xml/settings.xml.h:49
 msgid "<b>Process ID:</b>"
 msgstr "<b> 프로세스 ID : </b>"
 
-#: ui/xml/settings.xml.h:44
+#: ui/xml/settings.xml.h:50
 msgid "<b>Memory usage:</b> "
 msgstr "<b> 메모리 사용량 : </b> "
 
-#: ui/xml/settings.xml.h:45
+#: ui/xml/settings.xml.h:51
 msgid "<b>Locale:</b> "
 msgstr "<b>언어 :</b> "
 
-#: ui/xml/settings.xml.h:46
+#: ui/xml/settings.xml.h:52
 msgid "Status Checker"
 msgstr "상태 검사기"
 
-#: ui/xml/settings.xml.h:47
+#: ui/xml/settings.xml.h:53
 msgid "<b>Configuration Editor</b>"
 msgstr "<b>구성 편집기</b>"
 
-#: ui/xml/settings.xml.h:48
+#: ui/xml/settings.xml.h:54
 msgid "Git"
-msgstr "Git"
+msgstr ""
 
-#: ui/xml/add.xml.h:4
-msgid "Show ignored files"
-msgstr "무시된 파일 표시"
+#: ui/xml/log.xml.h:2 ui/xml/commit.xml.h:4
+msgid "Refresh"
+msgstr "새로고침"
 
-#: ui/xml/dialogs/delete_confirmation.xml.h:1
-msgid "Delete Confirmation"
-msgstr "삭제 확인"
+#: ui/xml/log.xml.h:3
+msgid "100"
+msgstr ""
 
-#: ui/xml/dialogs/delete_confirmation.xml.h:3 ui/xml/properties.xml.h:6
-msgid "_Delete"
-msgstr "삭제(_D)"
+#: ui/xml/log.xml.h:4
+msgid "Limit:"
+msgstr ""
 
-#: ui/xml/dialogs/delete_confirmation.xml.h:4
-msgid "The item(s) will be sent to the trash can."
-msgstr "항목(들)은 휴지통으로 전송됩니다."
+#: ui/xml/log.xml.h:5
+msgid "_Back"
+msgstr "뒤로(_B)"
 
-#: ui/xml/dialogs/delete_confirmation.xml.h:6
-msgid ""
-"<span size=\"large\"><b>Are you sure you want to delete %item%?</b></span>"
-msgstr "<span size = \"large\"><b>%item% 을(를) 삭제 하시겠습니까?</b></span>"
+#: ui/xml/log.xml.h:6
+msgid "_Forward"
+msgstr "앞으로(_F)"
 
-#: ui/xml/dialogs/certificate.xml.h:1
-msgid "Check Certificate"
-msgstr "인증서 확인"
+#: ui/xml/log.xml.h:7 ui/log.py:316 ui/log.py:317
+msgid "N/A"
+msgstr ""
 
-#: ui/xml/dialogs/certificate.xml.h:2
-msgid "Accept Once"
-msgstr "한 번 허용"
+#: ui/xml/log.xml.h:9
+msgid "Showing Revisions:"
+msgstr "리비전 표시:"
 
-#: ui/xml/dialogs/certificate.xml.h:3
-msgid "Accept Forever"
-msgstr "영구적으로 허용"
+#: ui/xml/log.xml.h:10
+msgid "Stop on copy"
+msgstr "복사 중단"
 
-#: ui/xml/dialogs/certificate.xml.h:4
-msgid "Deny"
-msgstr "거부"
+#: ui/xml/log.xml.h:11
+msgid "<b>Revisions Table</b>"
+msgstr "<b>리비전 표</b>"
 
-#: ui/xml/dialogs/certificate.xml.h:5
-msgid "Fingerprint:"
-msgstr "지문:"
+#: ui/xml/log.xml.h:12
+msgid "<b>Affected File(s)</b> (double-click to compare with base)"
+msgstr "<b>영향을 받는 파일</b> (기본과 비교하려면 더블클릭)"
 
-#: ui/xml/dialogs/certificate.xml.h:6
-msgid "Valid:"
-msgstr "Valid:"
+#: ui/xml/log.xml.h:13 ui/xml/dialogs/previous_messages.xml.h:5
+msgid "<b>Message</b>"
+msgstr "<b>메세지</b>"
 
-#: ui/xml/dialogs/certificate.xml.h:7
-msgid "Issuer:"
-msgstr "Issuer :"
+#: ui/xml/property_page.xml.h:1
+msgid "Property status:"
+msgstr "속성 상태:"
 
-#: ui/xml/dialogs/certificate.xml.h:8 ui/widget.py:1310
-msgid "Host:"
-msgstr "Host:"
+#: ui/xml/property_page.xml.h:2
+msgid "Content status:"
+msgstr "본문 상태:"
 
-#: ui/xml/dialogs/certificate.xml.h:9
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:6
-msgid "Realm:"
-msgstr "Realm:"
+#: ui/xml/property_page.xml.h:3
+msgid "VCS:"
+msgstr ""
 
-#: ui/xml/dialogs/certificate.xml.h:10
-msgid "<b>Certificate Details</b>"
-msgstr "<b>인증서 세부 정보</b>"
-
-#: ui/xml/dialogs/name_email_prompt.xml.h:1
-msgid "Name and Email"
-msgstr "이름과 이메일"
-
-#: ui/xml/dialogs/name_email_prompt.xml.h:4
-msgid "<b>Enter Name and Email Details</b>"
-msgstr "<b>이름 및 이메일 세부 정보 입력</b>"
-
-#: ui/xml/dialogs/name_email_prompt.xml.h:5
-msgid "Email:"
-msgstr "이메일:"
-
-#: ui/xml/dialogs/name_email_prompt.xml.h:6 ui/xml/property_page.xml.h:4
-#: ui/tags.py:98
+#: ui/xml/property_page.xml.h:4 ui/xml/dialogs/name_email_prompt.xml.h:6
+#: ui/tags.py:105
 msgid "Name:"
 msgstr "이름:"
-
-#: ui/xml/dialogs/confirmation.xml.h:1
-msgid "Confirmation"
-msgstr "확인"
-
-#: ui/xml/dialogs/confirmation.xml.h:2
-msgid "_No"
-msgstr "아니오(_N)"
-
-#: ui/xml/dialogs/confirmation.xml.h:3
-msgid "_Yes"
-msgstr "예(_Y)"
-
-#: ui/xml/dialogs/confirmation.xml.h:4 ui/dialog.py:316
-msgid "Are you sure you want to continue?"
-msgstr "정말로 계속하기를 원하십니까?"
-
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:1
-msgid "SSL Client Certification"
-msgstr "SSL 클라이언트 인증"
-
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:4
-msgid "Save Authentication"
-msgstr "인증 저장"
-
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:5
-msgid "Path:"
-msgstr "경로:"
-
-#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:7
-msgid "<b>Please provide your ssl certification file</b>"
-msgstr "<b>SSL 인증 파일을 제공하세요.</b>"
-
-#: ui/xml/dialogs/previous_messages.xml.h:4
-msgid "<b>Previous Messages</b>"
-msgstr "<b>이전 메시지</b>"
-
-#: ui/xml/dialogs/previous_messages.xml.h:5 ui/xml/log.xml.h:13
-msgid "<b>Message</b>"
-msgstr "<b>메시지</b>"
 
 #: ui/xml/dialogs/mark_resolved_prompt.xml.h:1
 msgid "Mark Resolved"
@@ -1432,6 +1652,89 @@ msgstr "RabbitVCS 오류"
 msgid "<span weight=\"bold\" size=\"xx-large\">RabbitVCS Error</span>"
 msgstr "<span weight= \"bold\" size=\"xx-large\">RabbitVCS 오류</span>"
 
+#: ui/xml/dialogs/delete_confirmation.xml.h:1
+msgid "Delete Confirmation"
+msgstr "삭제 확인"
+
+#: ui/xml/dialogs/delete_confirmation.xml.h:3 ui/xml/properties.xml.h:6
+msgid "_Delete"
+msgstr "삭제(_D)"
+
+#: ui/xml/dialogs/delete_confirmation.xml.h:4
+msgid "The item(s) will be sent to the trash can."
+msgstr "이 항목은 휴지통으로 보내집니다."
+
+#: ui/xml/dialogs/delete_confirmation.xml.h:6
+msgid ""
+"<span size=\"large\"><b>Are you sure you want to delete %item%?</b></span>"
+msgstr ""
+"<span size=\"large\"><b>정말 %item% 을(를) 삭제하시겠습니까?</b></span>"
+
+#: ui/xml/dialogs/create_folder.xml.h:1
+msgid "Create Folder..."
+msgstr "폴더 생성 .."
+
+#: ui/xml/dialogs/create_folder.xml.h:4
+msgid "<b>Folder Name</b>"
+msgstr "<b>폴더 이름</b>"
+
+#: ui/xml/dialogs/create_folder.xml.h:5 ui/xml/commit.xml.h:6
+msgid "<b>Add Message</b>"
+msgstr "<b>메세지 추가</b>"
+
+#: ui/xml/dialogs/name_email_prompt.xml.h:1
+msgid "Name and Email"
+msgstr "이름과 이메일"
+
+#: ui/xml/dialogs/name_email_prompt.xml.h:4
+msgid "<b>Enter Name and Email Details</b>"
+msgstr "<b>이름 및 이메일 세부 정보 입력</b>"
+
+#: ui/xml/dialogs/name_email_prompt.xml.h:5
+msgid "Email:"
+msgstr "이메일:"
+
+#: ui/xml/dialogs/loading.xml.h:1
+msgid "Loading"
+msgstr "로딩 중"
+
+#: ui/xml/dialogs/confirmation.xml.h:1
+msgid "Confirmation"
+msgstr "확인"
+
+#: ui/xml/dialogs/confirmation.xml.h:2
+msgid "_No"
+msgstr "아니오(_N)"
+
+#: ui/xml/dialogs/confirmation.xml.h:3
+msgid "_Yes"
+msgstr "예(_Y)"
+
+#: ui/xml/dialogs/previous_messages.xml.h:4
+msgid "<b>Previous Messages</b>"
+msgstr "<b>이전 메세지</b>"
+
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:1
+msgid "SSL Client Certification"
+msgstr "SSL 클라이언트 인증"
+
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:4
+msgid "Save Authentication"
+msgstr "인증 정보 저장"
+
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:5
+msgid "Path:"
+msgstr "경로:"
+
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:6
+#: ui/xml/dialogs/certificate.xml.h:9
+msgid "Realm:"
+msgstr ""
+
+#: ui/xml/dialogs/ssl_client_cert_prompt.xml.h:7
+msgid "<b>Please provide your ssl certification file</b>"
+msgstr "<b>SSL 인증 파일을 제공하세요.</b>"
+
 #: ui/xml/dialogs/conflict_decision.xml.h:1
 msgid "Edit Conflicts"
 msgstr "충돌 수정"
@@ -1442,95 +1745,47 @@ msgstr "취소"
 
 #: ui/xml/dialogs/conflict_decision.xml.h:3
 msgid "Accept Mine"
-msgstr "내 변경 수용"
+msgstr "내 변경 적용"
 
 #: ui/xml/dialogs/conflict_decision.xml.h:4
 msgid "Accept Theirs"
-msgstr "다른 사람 변경 수용"
+msgstr "다른 사람의 변경 적용"
 
 #: ui/xml/dialogs/conflict_decision.xml.h:5
 msgid "<b>A conflict was found in the following file:</b>"
-msgstr "<b>다음 파일에서 충돌이 발견되었습니다.</b>"
+msgstr "<b>충돌이 발견된 파일:</b>"
 
-#: ui/xml/dialogs/create_folder.xml.h:1
-msgid "Create Folder..."
-msgstr "폴더 생성 ..."
+#: ui/xml/dialogs/certificate.xml.h:1
+msgid "Check Certificate"
+msgstr "인증서 확인"
 
-#: ui/xml/dialogs/create_folder.xml.h:4
-msgid "<b>Folder Name</b>"
-msgstr "<b>폴더 이름</b>"
+#: ui/xml/dialogs/certificate.xml.h:2
+msgid "Accept Once"
+msgstr "한번 허용"
 
-#: ui/xml/dialogs/loading.xml.h:1
-msgid "Loading"
-msgstr "로딩 중"
+#: ui/xml/dialogs/certificate.xml.h:3
+msgid "Accept Forever"
+msgstr "영구적으로 허용"
 
-#: ui/xml/ignore.xml.h:1
-msgid "Ignore"
-msgstr "무시"
+#: ui/xml/dialogs/certificate.xml.h:4
+msgid "Deny"
+msgstr "거부"
 
-#: ui/xml/ignore.xml.h:4
-msgid "<b>Ignore and exclude files from being tracked</b>"
-msgstr "<b>추적에서 파일 무시 및 제외</b>"
+#: ui/xml/dialogs/certificate.xml.h:5
+msgid "Fingerprint:"
+msgstr ""
 
-#: ui/xml/clean.xml.h:4
-msgid "Force"
-msgstr "강제"
+#: ui/xml/dialogs/certificate.xml.h:6
+msgid "Valid:"
+msgstr ""
 
-#: ui/xml/clean.xml.h:5
-msgid "Dry run"
-msgstr "테스트 실행(실제 반영 안됨)"
+#: ui/xml/dialogs/certificate.xml.h:7
+msgid "Issuer:"
+msgstr ""
 
-#: ui/xml/clean.xml.h:6
-msgid "Remove only ignored files"
-msgstr "무시된 파일만 제거"
-
-#: ui/xml/clean.xml.h:7
-msgid "Remove ignored files, too"
-msgstr "무시된 파일도 제거"
-
-#: ui/xml/clean.xml.h:8
-msgid "Remove directories"
-msgstr "디렉토리 제거"
-
-#: ui/xml/clean.xml.h:9
-msgid "Remove untracked files from the working tree"
-msgstr "작업 트리에서 추적되지 않은 파일 제거"
-
-#: ui/xml/clean.xml.h:10
-msgid "<b>Clean your Repository</b>"
-msgstr "<b>저장소 정리(Cleanup)</b>"
-
-#: ui/xml/properties.xml.h:3 ui/dialog.py:302
-msgid "_Save"
-msgstr "저장(_S)"
-
-#: ui/xml/properties.xml.h:4
-msgid "_New..."
-msgstr "새 속성...(_N)"
-
-#: ui/xml/properties.xml.h:5
-msgid "_Edit..."
-msgstr "편집하다...(_E)"
-
-#: ui/xml/properties.xml.h:7
-msgid "Delete properties recursively"
-msgstr "재귀 적으로 속성 삭제"
-
-#: ui/xml/properties.xml.h:8
-msgid "<i>Selected properties will be applied recursively.</i>"
-msgstr "<i>선택한 속성이 반복적으로 적용됩니다.</i>"
-
-#: ui/xml/properties.xml.h:9
-msgid "<b>Properties for:</b>"
-msgstr "<b>속성 :</b>"
-
-#: ui/xml/notification.xml.h:1
-msgid "Notification Messages"
-msgstr "알림 메시지"
-
-#: ui/xml/notification.xml.h:4 ui/xml/annotate.xml.h:2
-msgid "Save _As"
-msgstr "다른 이름으로 저장"
+#: ui/xml/dialogs/certificate.xml.h:10
+msgid "<b>Certificate Details</b>"
+msgstr "<b>인증서 상세 정보</b>"
 
 #: ui/xml/git-update.xml.h:3
 msgid "Fetch from all remotes"
@@ -1548,574 +1803,423 @@ msgstr "로컬 브랜치로 병합"
 msgid "Apply remote changes"
 msgstr "원격 변경 적용"
 
-#: ui/xml/log.xml.h:3
-msgid "100"
+#: ui/xml/commit.xml.h:7
+msgid "Show unversioned files"
+msgstr "버전 정보 없는 파일 보기"
+
+#: ui/xml/commit.xml.h:9
+msgid "<b>Changed Files</b> (double-click to compare with base)"
+msgstr "<b>변경된 파일</b> (기본과 비교하려면 더블클릭)"
+
+#: ui/xml/commit.xml.h:10
+msgid "<b>Commit to:</b>"
 msgstr ""
 
-#: ui/xml/log.xml.h:4
-msgid "Limit:"
-msgstr "제한:"
+#: ui/xml/properties.xml.h:4
+msgid "_New..."
+msgstr "새 속성(_N)"
 
-#: ui/xml/log.xml.h:5
-msgid "_Back"
-msgstr "뒤로(_B)"
+#: ui/xml/properties.xml.h:5
+msgid "_Edit..."
+msgstr "수정(_E)"
 
-#: ui/xml/log.xml.h:6
-msgid "_Forward"
-msgstr "앞으로(_F)"
+#: ui/xml/properties.xml.h:7
+msgid "Delete properties recursively"
+msgstr "재귀적으로 속성 삭제"
 
-#: ui/xml/log.xml.h:8 ui/dialog.py:136
-msgid "to"
+#: ui/xml/properties.xml.h:8
+msgid "<i>Selected properties will be applied recursively.</i>"
+msgstr "<i>선택한 속성이 재귀적으로 적용됩니다.</i>"
+
+#: ui/xml/properties.xml.h:9
+msgid "<b>Properties for:</b>"
+msgstr "<b>속성:</b>"
+
+#: ui/xml/update.xml.h:4
+msgid "Rollback to specified revision number"
+msgstr "지정한 리비전으로 되돌리기(Rollback)"
+
+#: ui/xml/update.xml.h:5
+msgid "Omit Externals"
+msgstr "외부 생략"
+
+#: ui/xml/relocate.xml.h:4
+msgid "To:"
 msgstr ""
 
-#: ui/xml/log.xml.h:9
-msgid "Showing Revisions:"
-msgstr "리비전(Revision) 표시 :"
-
-#: ui/xml/log.xml.h:10
-msgid "Stop on copy"
-msgstr "복사 중지"
-
-#: ui/xml/log.xml.h:11
-msgid "<b>Revisions Table</b>"
-msgstr "<b>리비전(Revision) 표</b>"
-
-#: ui/xml/log.xml.h:12
-msgid "<b>Affected File(s)</b> (double-click to compare with base)"
-msgstr "<b>영향을받는 파일</b> (기본과 비교하려면 두 번 클릭)"
-
-#: ui/xml/lock.xml.h:1
-msgid "Lock Files"
-msgstr "잠금 파일"
-
-#: ui/xml/lock.xml.h:4
-msgid "Steal the locks"
-msgstr "Steal the locks"
-
-#: ui/xml/lock.xml.h:6
-msgid "<b>Files to lock</b>"
-msgstr "<b>잠글 파일</b>"
-
-#: ui/xml/lock.xml.h:8
-msgid "<b>Please describe why you are locking these files</b>"
-msgstr "<b>이 파일을 잠그는 이유를 설명하세요.</b>"
-
-#: ui/xml/annotate.xml.h:1
-msgid "Annotate"
-msgstr "주석 달기"
-
-#: ui/xml/annotate.xml.h:4
-msgid "<b>To Revision</b>"
-msgstr "<b>리비전(Revision)에</b>"
-
-#: ui/xml/annotate.xml.h:5
-msgid "<b>From Revision</b>"
-msgstr "<b>리비전(Revision)에서</b>"
-
-#: ui/xml/import.xml.h:4
-msgid "Include ignored files"
-msgstr "무시된 파일 포함"
-
-#: ui/xml/import.xml.h:6
-msgid "<b>Import Message</b>"
-msgstr "<b>메시지 가져 오기</b>"
-
-#: ui/xml/import.xml.h:7
-msgid "<b>Repository</b>"
-msgstr "<b>저장소</b>"
-
-#: ui/xml/reset.xml.h:4
-msgid "None"
-msgstr "없음"
-
-#: ui/xml/reset.xml.h:5
-msgid ""
-"<i>Merge</i> - Resets the index to match the tree recorded by the named "
-"commit,\n"
-"and updates the files that are different between the named commit\n"
-"and the current commit in the working tree"
-msgstr "<i> Merge </i> - 명명된 커밋에 의해 기록된 트리와 일치하도록 인덱스를 재설정합니다.\n"
-"명명된 커밋간에 다른 파일을 업데이트합니다.\n"
-"작업 트리의 현재 커밋"
-
-#: ui/xml/reset.xml.h:8
-msgid ""
-"<i>Hard</i> - Matches the working tree and index to that of the \n"
-"tree being switched to"
-msgstr "<i> Hard </i> - 작업 트리 및 색인이\n"
-"전환되는 트리"
-
-#: ui/xml/reset.xml.h:10
-msgid ""
-"<i>Soft</i> - Does not touch the index file or working tree at all, \n"
-"but requires them to be in good working order"
-msgstr "<i> Soft </i> - 색인 파일이나 작업 트리를 전혀 건드리지 않습니다.\n"
-"하지만 제대로 작동해야합니다."
-
-#: ui/xml/reset.xml.h:12
-msgid "<i>Mixed</i> - Reset the index but not the working tree"
-msgstr "<i> 혼합 </i> - 색인을 재설정하지만 작업 트리는 재설정하지 않습니다."
-
-#: ui/xml/reset.xml.h:15
-msgid "<b>Path</b>"
-msgstr "<b>경로</b>"
-
-#: ui/xml/reset.xml.h:16
-msgid "Reset current HEAD to specified state."
-msgstr "현재 HEAD를 지정된 상태로 재설정합니다."
-
-#: ui/xml/reset.xml.h:17
-msgid "<b>Reset your Repository</b>"
-msgstr "<b>저장소 재설정</b>"
-
-#: ui/xml/property_page.xml.h:1
-msgid "Property status:"
-msgstr "속성 상태 :"
-
-#: ui/xml/property_page.xml.h:2
-msgid "Content status:"
-msgstr "콘텐츠 상태 :"
-
-#: ui/xml/property_page.xml.h:3
-msgid "VCS:"
-msgstr "VCS :"
-
-#: ui/rename.py:50
-msgid "The requested file or folder does not exist."
-msgstr "요청한 파일 또는 폴더가 없습니다."
-
-#: ui/rename.py:54 ui/rename.py:86 ui/rename.py:115 ui/browser.py:465
-msgid "Rename"
-msgstr "이름 바꾸기"
-
-#: ui/rename.py:54 ui/browser.py:465
-msgid "New Name:"
-msgstr "새 이름:"
-
-#: ui/rename.py:62
-msgid "The new name field is required"
-msgstr "새 이름 필드는 필수입니다."
-
-#: ui/rename.py:87 ui/rename.py:116
-msgid "Running Rename Command..."
-msgstr "이름 바꾸기 명령 실행 중 ..."
-
-#: ui/rename.py:93 ui/rename.py:122
-msgid "Completed Rename"
-msgstr "이름 바꾸기 완료"
-
-#: ui/update.py:56 ui/update.py:105 ui/updateto.py:92
-msgid "Updating..."
-msgstr "업데이트 중 ..."
-
-#: ui/update.py:58 ui/update.py:123 ui/updateto.py:100
-msgid "Completed Update"
-msgstr "완료된 업데이트"
-
-#: ui/revprops.py:66 ui/properties.py:153 ui/property_editor.py:158
-msgid "Unable to retrieve properties list"
-msgstr "속성 목록을 검색 할 수 없습니다."
-
-#: ui/widget.py:1039
-msgid "Branch"
-msgstr "브랜치(Branch)"
-
-#: ui/widget.py:1044
-msgid "Number"
-msgstr "번호"
-
-#: ui/widget.py:1047
-msgid "Working Copy"
-msgstr "작업본(Working Copy) "
-
-#: ui/widget.py:1268
-msgid "Repository:"
-msgstr "저장소:"
-
-#: ui/widget.py:1285
-msgid "Branch:"
-msgstr "브랜치(Branch):"
-
-#: ui/widget.py:1426
-msgid "Add line:"
-msgstr "줄 추가 :"
-
-#: ui/browser.py:91
-msgid "Size"
-msgstr "크기"
-
-#: ui/browser.py:341
-msgid "Create folder..."
-msgstr "폴더 만들기 ..."
-
-#: ui/browser.py:346
-msgid "Copy to..."
-msgstr "에게 복사..."
-
-#: ui/browser.py:351
-msgid "Copy URL to clipboard"
-msgstr "URL을 클립 보드에 복사"
-
-#: ui/browser.py:356
-msgid "Move to..."
-msgstr "이동 ..."
-
-#: ui/browser.py:526
-msgid "Where do you want to copy the selection?"
-msgstr "선택 항목을 어디에 복사 하시겠습니까?"
-
-#: ui/browser.py:527 ui/browser.py:556
-msgid "New Location:"
-msgstr "새로운 위치:"
-
-#: ui/browser.py:555
-msgid "Where do you want to move the selection?"
-msgstr "선택 항목을 어디로 이동 하시겠습니까?"
-
-#: ui/relocate.py:72
-msgid "The from and to url fields are both required."
-msgstr "from 및 to url 필드는 모두 필수입니다."
-
-#: ui/relocate.py:83
-msgid "Running Relocate Command..."
-msgstr "재배치 명령 실행 중 ..."
-
-#: ui/relocate.py:90
-msgid "Completed Relocate"
-msgstr "재배치 완료"
-
-#: ui/add.py:216 ui/add.py:241
-msgid "Running Add Command..."
-msgstr "추가 명령 실행 중 ..."
-
-#: ui/add.py:218 ui/add.py:243
-msgid "Completed Add"
-msgstr "추가 완료"
-
-#: ui/updateto.py:80
-msgid "Rollback To Revision"
-msgstr "리비전(Revision)으로 돌아가기(Rollback)"
-
-#: ui/updateto.py:81
-msgid "Rolling Back..."
-msgstr "롤백 중 ..."
-
-#: ui/updateto.py:89
-msgid "Completed Rollback"
-msgstr "완료된 롤백"
-
-#: ui/updateto.py:91
-msgid "Update To Revision"
-msgstr "리비전(Revision)으로 업데이트"
-
-#: ui/updateto.py:117
-msgid "What revision/branch do you want to checkout?"
-msgstr "어떤 리비전(Revision)/지점을 체크아웃(Checkout) 하시겠습니까?"
-
-#: ui/updateto.py:138
-msgid "Checkout"
-msgstr "체크아웃(Checkout)"
-
-#: ui/updateto.py:139
-#, python-format
-msgid "Checking out %s..."
-msgstr "%s 가져오는 중 ..."
-
-#: ui/updateto.py:145
-msgid "Completed Checkout"
-msgstr "체크아웃(Checkout) 완료"
-
-#: ui/create.py:52
-msgid "Repository successfully created"
-msgstr "저장소가 성공적으로 생성되었습니다."
-
-#: ui/create.py:54
-msgid ""
-"There was an error creating the repository.  Make sure the given folder is "
-"empty."
-msgstr "저장소를 만드는 중에 오류가 발생했습니다. 주어진 폴더가 비어 있는지 확인하십시오."
-
-#: ui/create.py:69
-msgid "Setting up repository..."
-msgstr "저장소 설정 중 ..."
-
-#: ui/create.py:71
-msgid "Completed repository setup"
-msgstr "완료된 저장소 설정"
-
-#: ui/tags.py:62
+#: ui/xml/relocate.xml.h:5
+msgid "From:"
+msgstr ""
+
+#: ui/xml/relocate.xml.h:6
+msgid "<b>Change the repository of your working copy</b>"
+msgstr "<b>현재 작업본의 저장소 변경</b>"
+
+#: ui/xml/ignore.xml.h:1
+msgid "Ignore"
+msgstr "제외(Ignore)"
+
+#: ui/xml/ignore.xml.h:4
+msgid "<b>Ignore and exclude files from being tracked</b>"
+msgstr "<b>추적에서 파일 제외</b>"
+
+#: ui/tags.py:69
 msgid "Tag Manager"
 msgstr "태그 관리자"
 
-#: ui/tags.py:63
+#: ui/tags.py:70
 msgid "<b>Tags</b>"
-msgstr "<b>태그</b>"
+msgstr "<b>태그(Tags)</b>"
 
-#: ui/tags.py:74
+#: ui/tags.py:81
 msgid "Tag"
 msgstr "태그(Tag)"
 
-#: ui/tags.py:127 ui/tags.py:188 ui/merge.py:520
-msgid "Message:"
-msgstr "메시지:"
-
-#: ui/tags.py:145 ui/tags.py:295
+#: ui/tags.py:152 ui/tags.py:302
 msgid "Save"
 msgstr "저장"
 
-#: ui/tags.py:153
+#: ui/tags.py:160
 msgid "Tagger:"
-msgstr "태그:"
+msgstr "태그 작성:"
 
-#: ui/tags.py:165 ui/merge.py:497
-msgid "Date:"
-msgstr "날짜:"
+#: ui/tags.py:245 ui/remotes.py:126
+#, python-format
+msgid "Are you sure you want to delete %s?"
+msgstr "정말 %s 을(를) 삭제하시겠습니까?"
 
-#: ui/tags.py:286
+#: ui/tags.py:293
 msgid "<b>Add Tag</b>"
-msgstr "<b>태그 추가</b>"
+msgstr "<b>태그(Tag) 추가</b>"
 
-#: ui/tags.py:304
+#: ui/tags.py:311
 msgid "<b>Tag Detail</b>"
 msgstr "<b>태그 세부 정보</b>"
+
+#: ui/create.py:56
+msgid "Repository successfully created"
+msgstr "저장소가 성공적으로 생성되었습니다."
+
+#: ui/create.py:58
+msgid ""
+"There was an error creating the repository.  Make sure the given folder is "
+"empty."
+msgstr ""
+"저장소를 만드는 중에 오류가 발생했습니다.  폴더가 비어 있는지 확인하십시오."
+
+#: ui/create.py:73
+msgid "Setting up repository..."
+msgstr "저장소 설정 중..."
+
+#: ui/create.py:75
+msgid "Completed repository setup"
+msgstr "저장소 설정 완료"
+
+#: ui/unlock.py:50 ui/unlock.py:113
+msgid "Unlock"
+msgstr "잠금해제"
+
+#: ui/unlock.py:114
+msgid "Running Unlock Command..."
+msgstr "잠금해제(Unlock) 명령 실행 중..."
+
+#: ui/unlock.py:117
+msgid "Completed Unlock"
+msgstr "잠금해제(Unlock) 완료"
+
+#: ui/rename.py:54
+msgid "The requested file or folder does not exist."
+msgstr "요청한 파일 또는 폴더가 없습니다."
+
+#: ui/rename.py:66
+msgid "The new name field is required"
+msgstr "새 이름 필드는 필수입니다"
+
+#: ui/rename.py:91 ui/rename.py:120
+msgid "Running Rename Command..."
+msgstr "이름 바꾸기 명령 실행 중 ..."
+
+#: ui/rename.py:97 ui/rename.py:126
+msgid "Completed Rename"
+msgstr "이름 바꾸기 완료"
+
+#: ui/cleanup.py:61
+msgid "Cleaning Up..."
+msgstr "비우는 중(Clean Up)..."
+
+#: ui/cleanup.py:63
+msgid "Completed Cleanup"
+msgstr "비우기(Cleanup) 완료"
+
+#: ui/__init__.py:55
+msgid ""
+"You must specify a version control system using the --vcs [svn|git] option"
+msgstr "--vcs [svn|git] 옵션을 사용하여 버전 관리 시스템을 지정해야 합니다"
+
+#: ui/log.py:132
+#, python-format
+msgid "Log - %s"
+msgstr "로그 - %s"
+
+#: ui/log.py:386
+msgid "Color"
+msgstr "색상"
+
+#: ui/log.py:402
+msgid "Copy From Path"
+msgstr "경로에서 복사"
+
+#: ui/log.py:402
+msgid "Copy From Revision"
+msgstr "리비전에서 복사"
+
+#: ui/log.py:675
+msgid "Graph"
+msgstr "그래프"
+
+#: ui/log.py:1014
+msgid "Compare with working copy"
+msgstr "작업본과 비교하기"
+
+#: ui/log.py:1030
+msgid "Show changes against previous revision"
+msgstr "이전 리비전과 차이점 보기"
+
+#: ui/log.py:1036
+msgid "Show changes between revisions"
+msgstr "리비전 간 변경 보기"
+
+#: ui/log.py:1041
+msgid "Update to this revision"
+msgstr "이 리비전 업데이트"
+
+#: ui/log.py:1042
+msgid "Update the selected path to this revision"
+msgstr "선택한 경로를 이 버전으로 업데이트"
+
+#: ui/log.py:1047
+msgid "Revert changes from this revision"
+msgstr "이 버전의 변경 사항 되돌리기"
+
+#: ui/log.py:1048
+msgid "Update the selected path by reverse merging the changes"
+msgstr "변경 사항을 역 병합하여 선택한 경로 업데이트"
+
+#: ui/log.py:1053
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+
+#: ui/log.py:1054
+msgid "Copy to clipboard the full data of these revisions"
+msgstr "이 리비전들의 전체 데이터를 클립보드에 복사"
+
+#: ui/log.py:1059
+msgid "Edit author..."
+msgstr "작성자 수정..."
+
+#: ui/log.py:1064
+msgid "Edit log message..."
+msgstr "로그 메세지 수정..."
+
+#: ui/log.py:1069
+msgid "Edit revision properties..."
+msgstr "리비전 속성 수정..."
+
+#: ui/log.py:1347
+msgid "(no author)"
+msgstr ""
+
+#: ui/log.py:1351
+msgid "Edit author"
+msgstr "작성자 수정"
+
+#: ui/log.py:1363
+msgid "Edit log message"
+msgstr "로그 메세지 수정"
+
+#: ui/settings.py:50
+msgid "There was an error communicating with the status checker service."
+msgstr "상태 검사 서비스와 통신하는 동안 오류가 발생했습니다."
+
+#: ui/settings.py:56
+msgid "default"
+msgstr "기본값"
+
+#: ui/settings.py:57
+msgid "locale"
+msgstr "식별된 언어"
+
+#: ui/settings.py:58
+msgid "ISO"
+msgstr ""
+
+#: ui/settings.py:167
+msgid "Config file:"
+msgstr "설정 파일:"
+
+#: ui/settings.py:359
+msgid "Select a program"
+msgstr "프로그램 선택"
+
+#: ui/settings.py:368
+msgid "Are you sure you want to clear your repository paths?"
+msgstr "저장소 경로를 지우시겠습니까?"
+
+#: ui/settings.py:375
+msgid "Repository paths cleared"
+msgstr "저장소 경로가 지워졌습니다"
+
+#: ui/settings.py:379
+msgid "Are you sure you want to clear your previous messages?"
+msgstr "이전 메세지를 지우겠습니까?"
+
+#: ui/settings.py:386
+msgid "Previous messages cleared"
+msgstr "이전 메세지 지워졌습니다"
+
+#: ui/settings.py:390
+msgid "Are you sure you want to clear your authentication information?"
+msgstr "정말 인증 정보를 지우겠습니까?"
+
+#: ui/settings.py:407
+msgid "Authentication information cleared"
+msgstr "인증 정보가 지워졌습니다"
 
 #: ui/property_page.py:146 ui/property_page.py:152
 msgid "Repository URL"
 msgstr "저장소 URL"
 
-#: ui/properties.py:56
+#: ui/revert.py:170 ui/revert.py:196
+msgid "Running Revert Command..."
+msgstr "되돌리기(Revert) 명령 실행 중..."
+
+#: ui/revert.py:172 ui/revert.py:198
+msgid "Completed Revert"
+msgstr "되돌리기(Revert) 완료"
+
+#: ui/diff.py:317
+msgid "View diff as side-by-side comparison"
+msgstr "나란히 비교하여 차이점 보기"
+
+#: ui/remotes.py:64
+msgid "Remote Repository Manager"
+msgstr "원격 저장소 관리자"
+
+#: ui/remotes.py:65
+msgid "<b>Remote Repositories</b>"
+msgstr "<b>원격 저장소</b>"
+
+#: ui/remotes.py:71 ui/properties.py:69 ui/property_editor.py:118
+msgid "Name"
+msgstr "이름"
+
+#: ui/remotes.py:71
+msgid "Host"
+msgstr "호스트"
+
+#: ui/reset.py:101
+msgid "Running Reset Command..."
+msgstr "리셋(Reset) 명령 실행 중..."
+
+#: ui/reset.py:108
+msgid "Completed Reset"
+msgstr "리셋(Reset) 완료"
+
+#: ui/import.py:45
+#, python-format
+msgid "Import - %s"
+msgstr "가져오기 - %s"
+
+#: ui/import.py:67
+msgid "The repository URL field is required."
+msgstr "저장소 URL 필드는 필수입니다."
+
+#: ui/import.py:80
+msgid "Running Import Command..."
+msgstr "가져오기(Import) 명령 실행 중..."
+
+#: ui/import.py:88
+msgid "Completed Import"
+msgstr "가져오기(Import) 완료"
+
+#: ui/clean.py:70
+msgid "Running Clean Command..."
+msgstr "비우기(Clean) 명령 실행 중..."
+
+#: ui/clean.py:80
+msgid "Completed Clean"
+msgstr "비우기(Clean) 완료"
+
+#: ui/lock.py:77
+msgid "Locked"
+msgstr "잠김"
+
+#: ui/lock.py:126
+msgid "Yes"
+msgstr "예"
+
+#: ui/lock.py:162
+msgid "Get Lock"
+msgstr "잠금"
+
+#: ui/lock.py:163
+msgid "Running Lock Command..."
+msgstr "잠금(Lock) 명령 실행 중..."
+
+#: ui/lock.py:172
+msgid "Completed Lock"
+msgstr "잠금(Lock) 완료"
+
+#: ui/markresolved.py:84
+msgid "Running Resolved Command..."
+msgstr "해결됨(Resolved) 명령 실행 중..."
+
+#: ui/markresolved.py:87
+msgid "Completed Mark as Resolved"
+msgstr "해결됨(Resolved) 으로 표시 완료"
+
+#: ui/properties.py:61
 #, python-format
 msgid "Properties - %s"
 msgstr "속성 - %s"
 
-#: ui/properties.py:64 ui/property_editor.py:114
+#: ui/properties.py:69 ui/property_editor.py:118
 msgid "Value"
 msgstr "값"
 
-#: ui/properties.py:174
+#: ui/properties.py:179
 msgid "There was a problem saving your properties."
 msgstr "속성을 저장하는 중에 문제가 발생했습니다."
 
-#: ui/merge.py:103
-msgid "Running Merge Test"
-msgstr "병합 테스트 실행"
-
-#: ui/merge.py:104
-msgid "Completed Merge Test"
-msgstr "완료된 병합 테스트"
-
-#: ui/merge.py:106
-msgid "Running Merge Command"
-msgstr "병합 명령 실행"
-
-#: ui/merge.py:107 ui/merge.py:566
-msgid "Completed Merge"
-msgstr "완료된 병합"
-
-#: ui/merge.py:118 ui/merge.py:559
-msgid "Merge"
-msgstr "병합"
-
-#: ui/merge.py:474
-msgid "No active branch"
-msgstr "활성 브랜치 없음"
-
-#: ui/merge.py:485
-msgid "Author:"
-msgstr "저자:"
-
-#: ui/merge.py:560
-msgid "Running Merge Command..."
-msgstr "병합 명령 실행 중 ..."
-
-#: ui/dialog.py:35
-#, python-format
-msgid ""
-"An error has occurred in the RabbitVCS Nautilus extension. Please contact "
-"the <a href=\"%s\">RabbitVCS team</a> with the error details listed below:"
-msgstr "RabbitVCS Nautilus 확장에서 오류가 발생했습니다. 아래 나열된 오류 세부 정보와"
-" 함께 <a href=\"%s\">RabbitVCS 팀</a>에 문의하세요."
-
-#: ui/dialog.py:106
-msgid "Select a Folder"
-msgstr "폴더 선택"
-
-#: ui/dialog.py:276
-msgid "Select a File"
-msgstr "파일 선택"
-
-#: ui/dialog.py:282
-msgid "_Open"
-msgstr "열기(_O)"
-
-#: ui/dialog.py:296
-msgid "Save As..."
-msgstr "다른 이름으로 저장..."
-
-#: ui/dialog.py:344
-msgid "the selected item(s)"
-msgstr "선택한 항목"
-
-#: ui/dialog.py:415
-msgid "Added a folder to the repository"
-msgstr "저장소에 폴더를 추가했습니다."
-
-#: ui/annotate.py:58
-msgid "Cannot annotate a directory"
-msgstr "디렉토리에 주석을 달 수 없습니다."
-
-#: ui/annotate.py:64
-#, python-format
-msgid "Annotate - %s"
-msgstr "주석 달기 - %s"
-
-#: ui/annotate.py:131 ui/annotate.py:235
-msgid "Line"
-msgstr "줄"
-
-#: ui/annotate.py:132 ui/annotate.py:236
-msgid "Text"
-msgstr "본문"
-
-#: ui/annotate.py:149
-msgid "The from revision field must be an integer"
-msgstr "리비전(Revision) 필드는 정수여야 합니다."
-
-#: ui/property_editor.py:57
+#: ui/property_editor.py:61
 msgid ""
 "<b>Note:</b> changes to properties are applied instantly. You may review and "
 "undo changes using the context menu for each item.\n"
-msgstr "<b>참고 :</b> 속성 변경 사항은 즉시 적용됩니다. 각 항목의 상황에 맞는 메뉴를 "
+msgstr ""
+"<b>참고 :</b> 속성 변경 사항은 즉시 적용됩니다. 각 항목의 상황에 맞는 메뉴를 "
 "사용하여 변경 사항을 검토하고 취소 할 수 있습니다.\n"
-""
 
-#: ui/property_editor.py:62
+#: ui/property_editor.py:66
 msgid ""
 "Do you want to delete the selected properties from all files and "
 "subdirectories\n"
 "beneath this directory?"
-msgstr "모든 파일 및 하위 폴더에서 선택한 속성을 삭제 하시겠습니까?\n"
+msgstr ""
+"모든 파일 및 하위 폴더에서 선택한 속성을 삭제 하시겠습니까?\n"
 "이 폴더 하위의 모든 파일 및 폴더?"
 
-#: ui/property_editor.py:104
+#: ui/property_editor.py:108
 msgid "File is not under version control."
 msgstr "파일이 버전 제어를 받지 않습니다."
 
-#: ui/property_editor.py:114
+#: ui/property_editor.py:118
 msgid "Reserved"
 msgstr "예약"
 
-#: ui/property_editor.py:114
+#: ui/property_editor.py:118
 msgid "Status"
 msgstr "상태"
 
-#: ui/property_editor.py:182
+#: ui/property_editor.py:186
 msgid "Unable to set new value for property."
 msgstr "속성에 대한 새 값을 설정할 수 없습니다."
-
-#: ui/cleanup.py:57
-msgid "Cleaning Up..."
-msgstr "비우기(Cleanup)..."
-
-#: ui/cleanup.py:59
-msgid "Completed Cleanup"
-msgstr "비우기(Cleanup) 완료"
-
-#: ui/import.py:41
-#, python-format
-msgid "Import - %s"
-msgstr "가져 오기 - %s"
-
-#: ui/import.py:63
-msgid "The repository URL field is required."
-msgstr "저장소 URL 필드는 필수입니다."
-
-#: ui/import.py:76
-msgid "Running Import Command..."
-msgstr "가져 오기 명령 실행 중 ..."
-
-#: ui/import.py:84
-msgid "Completed Import"
-msgstr "가져 오기 완료"
-
-#: ui/clone.py:60 ui/export.py:73 ui/export.py:142
-msgid "The repository URL and destination path are both required fields."
-msgstr "저장소 URL과 대상 경로는 모두 필수 필드입니다."
-
-#: ui/clone.py:69
-msgid "Running Clone Command..."
-msgstr "복제(Clone) 명령 실행 중 ..."
-
-#: ui/clone.py:76
-msgid "Completed Clone"
-msgstr "복제(Clone) 완료"
-
-#: ui/settings.py:45
-msgid "There was an error communicating with the status checker service."
-msgstr "상태 검사기 서비스와 통신하는 동안 오류가 발생했습니다."
-
-#: ui/settings.py:124
-msgid "Config file:"
-msgstr "설정 파일 :"
-
-#: ui/settings.py:300
-msgid "Select a program"
-msgstr "프로그램 선택"
-
-#: ui/settings.py:309
-msgid "Are you sure you want to clear your repository paths?"
-msgstr "저장소 경로를 지우시겠습니까?"
-
-#: ui/settings.py:316
-msgid "Repository paths cleared"
-msgstr "저장소 경로가 지워졌습니다."
-
-#: ui/settings.py:320
-msgid "Are you sure you want to clear your previous messages?"
-msgstr "이전 메시지를 지우시겠습니까?"
-
-#: ui/settings.py:327
-msgid "Previous messages cleared"
-msgstr "이전 메시지가 삭제되었습니다."
-
-#: ui/settings.py:331
-msgid "Are you sure you want to clear your authentication information?"
-msgstr "인증 정보를 지우시겠습니까?"
-
-#: ui/settings.py:348
-msgid "Authentication information cleared"
-msgstr "인증 정보가 삭제되었습니다."
-
-#: ui/commit.py:267
-#, python-format
-msgid "Found %(changed)d changed and %(unversioned)d unversioned item(s)"
-msgstr "변경됨 %(changed)d , 버전없음 %(unversioned)d 항목을 찾았습니다."
-
-#: ui/commit.py:319 ui/commit.py:387
-msgid "Running Commit Command..."
-msgstr "커밋 명령 실행 중 ..."
-
-#: ui/commit.py:332 ui/commit.py:396
-msgid "Completed Commit"
-msgstr "커밋 완료"
-
-#: ui/diff.py:311
-msgid "View diff as side-by-side comparison"
-msgstr "나란히 비교하여 비교보기"
-
-#: ui/export.py:46 ui/export.py:125
-#, python-format
-msgid "Export - %s"
-msgstr "내보내기 - %s"
-
-#: ui/export.py:93 ui/export.py:162
-msgid "Export"
-msgstr "내보내기"
-
-#: ui/export.py:94 ui/export.py:163
-msgid "Running Export Command..."
-msgstr "내보내기 명령 실행 중 ..."
-
-#: ui/export.py:105 ui/export.py:171
-msgid "Completed Export"
-msgstr "내보내기 완료"

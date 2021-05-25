@@ -8,8 +8,8 @@ then
     exit 1
 fi
 
-msginit --input=../rabbitvcs/po/RabbitVCS.pot --locale=$LOCALE \
-    --output-file=../rabbitvcs/po/$LOCALE.po
+msginit --input=../po/RabbitVCS.pot --locale=$LOCALE \
+    --output-file=../po/$LOCALE.po
 
 echo ""
 echo "Once you have translated the strings, install the strings with \
