@@ -554,7 +554,7 @@ msgstr "스테이지(Stage)"
 
 #: util/contextmenuitems.py:723 ui/unstage.py:48 ui/unstage.py:73
 msgid "Unstage"
-msgstr "언 스테이지(Unstage)"
+msgstr "언스테이지(Unstage)"
 
 #: util/contextmenuitems.py:728
 msgid "Edit conflicts"
@@ -602,7 +602,7 @@ msgstr "원격 저장소 관리자"
 
 #: ui/remotes.py:62
 msgid "<b>Remote Repositories</b>"
-msgstr "<b> 원격 저장소 </b>"
+msgstr "<b>원격 저장소</b>"
 
 #: ui/remotes.py:68 ui/properties.py:64 ui/property_editor.py:114
 msgid "Name"
@@ -631,7 +631,7 @@ msgstr "Reset Command 실행 중 ..."
 
 #: ui/reset.py:104
 msgid "Completed Reset"
-msgstr "재설정 완료"
+msgstr "재설정(Reset) 완료"
 
 #: ui/markresolved.py:51 ui/commit.py:86
 msgid "Text Status"
@@ -684,7 +684,7 @@ msgstr "잠금 완료"
 #: ui/log.py:51 ui/log.py:375 ui/log.py:662 ui/xml/merge.xml.h:19
 #: ui/widget.py:1038 ui/browser.py:91 ui/annotate.py:131 ui/annotate.py:235
 msgid "Revision"
-msgstr "버전"
+msgstr "리비전"
 
 #: ui/log.py:52 ui/log.py:376 ui/log.py:663 ui/browser.py:91 ui/dialog.py:51
 #: ui/annotate.py:132 ui/annotate.py:236
@@ -724,7 +724,7 @@ msgstr "경로에서 복사"
 
 #: ui/log.py:393
 msgid "Copy From Revision"
-msgstr "버전에서 복사"
+msgstr "리비전에서 복사"
 
 #: ui/log.py:662
 msgid "Graph"
@@ -956,15 +956,15 @@ msgstr "재배치"
 
 #: ui/xml/relocate.xml.h:4
 msgid "To:"
-msgstr "에:"
+msgstr ""
 
 #: ui/xml/relocate.xml.h:5
 msgid "From:"
-msgstr "에서:"
+msgstr ""
 
 #: ui/xml/relocate.xml.h:6
 msgid "<b>Change the repository of your working copy</b>"
-msgstr "<b>작업본(working copy)의 저장소 변경 </b>"
+msgstr "<b>작업본(working copy)의 저장소 변경</b>"
 
 #: ui/xml/update.xml.h:4
 msgid "Rollback to specified revision number"
@@ -1025,7 +1025,7 @@ msgstr "1 단계 : 유형 병합"
 
 #: ui/xml/merge.xml.h:9
 msgid "<b>Working Copy</b>"
-msgstr "<b>작업본(Working Copy) </b>"
+msgstr "<b>작업본(Working Copy)</b>"
 
 #: ui/xml/merge.xml.h:10
 msgid ""
@@ -1062,15 +1062,15 @@ msgstr "2 단계 : 다수의 리비전(Revision) 병합"
 
 #: ui/xml/merge.xml.h:20 ui/widget.py:1037 ui/widget.py:1043
 msgid "HEAD"
-msgstr "HEAD"
+msgstr ""
 
 #: ui/xml/merge.xml.h:21
 msgid "<b>To: (URL and revision to merge)</b>"
-msgstr "<b>받는 사람 : (통합 할 URL 및 리비전(Revision))</b>"
+msgstr "<b>받는 사람 : (통합 할 URL 및 리비전)</b>"
 
 #: ui/xml/merge.xml.h:22
 msgid "<b>From: (URL and revision to merge)</b>"
-msgstr "<b>보낸 사람 : (통합 할 URL 및 리비전(Revision))</b>"
+msgstr "<b>보낸 사람 : (통합 할 URL 및 리비전)</b>"
 
 #: ui/xml/merge.xml.h:23
 msgid "Step 2: Merge two different trees"
@@ -1134,7 +1134,7 @@ msgstr "파일 속성 활성화"
 
 #: ui/xml/settings.xml.h:12
 msgid "<b>RabbitVCS</b>"
-msgstr "<b> RabbitVCS </b>"
+msgstr "<b>RabbitVCS</b>"
 
 #: ui/xml/settings.xml.h:13
 msgid "General"
@@ -1142,7 +1142,7 @@ msgstr "일반"
 
 #: ui/xml/settings.xml.h:14
 msgid "<b>Configure the program to resolve conflicted files.</b>"
-msgstr "<b> 충돌 파일을 해결하도록 프로그램을 구성합니다. </b>"
+msgstr "<b>충돌 파일을 해결하도록 프로그램을 구성합니다.</b>"
 
 #: ui/xml/settings.xml.h:16
 msgid ""
@@ -1263,7 +1263,7 @@ msgstr "상태 검사기"
 
 #: ui/xml/settings.xml.h:47
 msgid "<b>Configuration Editor</b>"
-msgstr "<b> 구성 편집기 </b>"
+msgstr "<b>구성 편집기</b>"
 
 #: ui/xml/settings.xml.h:48
 msgid "Git"
@@ -1518,11 +1518,11 @@ msgstr "재귀 적으로 속성 삭제"
 
 #: ui/xml/properties.xml.h:8
 msgid "<i>Selected properties will be applied recursively.</i>"
-msgstr "<i>선택한 속성이 반복적으로 적용됩니다. </i>"
+msgstr "<i>선택한 속성이 반복적으로 적용됩니다.</i>"
 
 #: ui/xml/properties.xml.h:9
 msgid "<b>Properties for:</b>"
-msgstr "<b> 속성 : </b>"
+msgstr "<b>속성 :</b>"
 
 #: ui/xml/notification.xml.h:1
 msgid "Notification Messages"
@@ -1534,7 +1534,7 @@ msgstr "다른 이름으로 저장"
 
 #: ui/xml/git-update.xml.h:3
 msgid "Fetch from all remotes"
-msgstr "모든 리모컨에서 가져 오기"
+msgstr "모든 원격저장소에서 가져 오기"
 
 #: ui/xml/git-update.xml.h:4
 msgid "Apply remote changes prior to local changes (rebase)"
@@ -1566,7 +1566,7 @@ msgstr "앞으로(_F)"
 
 #: ui/xml/log.xml.h:8 ui/dialog.py:136
 msgid "to"
-msgstr "에"
+msgstr ""
 
 #: ui/xml/log.xml.h:9
 msgid "Showing Revisions:"
