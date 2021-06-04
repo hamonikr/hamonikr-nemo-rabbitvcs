@@ -1,3 +1,10 @@
+hamonikr-nemo-rabbitvcs (1.1.1) jin; urgency=medium
+
+  * Update rabbitvcs-0.18/rabbitvcs/util/configspec/configspec.ini
+   - Hide Hg as default
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 04 Jun 2021 18:19:14 +0900
+
 hamonikr-nemo-rabbitvcs (1.1.0) jin; urgency=medium
 
   * Add rabbitvcs-0.18/po/ko.po
