@@ -42,7 +42,12 @@ from rabbitvcs.util.log import Log
 
 log = Log("rabbitvcs.ui.unlock")
 
-from rabbitvcs import gettext
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 class SVNUnlock(Add):

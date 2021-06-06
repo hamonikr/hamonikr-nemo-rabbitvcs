@@ -47,7 +47,12 @@ from rabbitvcs.util.highlighter import highlight
 from rabbitvcs.util.settings import SettingsManager
 import rabbitvcs.vcs
 
-from rabbitvcs import gettext
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 from rabbitvcs.util.log import Log

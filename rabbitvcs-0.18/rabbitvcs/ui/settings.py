@@ -42,7 +42,12 @@ from rabbitvcs.util.strings import S
 import rabbitvcs.services.checkerservice
 from rabbitvcs.services.checkerservice import StatusCheckerStub
 
-from rabbitvcs import gettext, _gettext, APP_NAME, LOCALE_DIR
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 CHECKER_UNKNOWN_INFO = _("Unknown")

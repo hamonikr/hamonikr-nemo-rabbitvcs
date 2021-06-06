@@ -38,7 +38,12 @@ sa = helper.SanitizeArgv()
 from gi.repository import Gtk, Gdk, GLib
 sa.restore()
 
-from rabbitvcs import APP_NAME, LOCALE_DIR, gettext
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 import rabbitvcs.vcs.status
@@ -94,6 +99,7 @@ class GtkBuilderWidgetWrapper(object):
         )
 
         tree = Gtk.Builder()
+        tree.set_translation_domain(APP_NAME)        
         tree.add_from_file(path)
 
         if self.claim_domain:

@@ -49,7 +49,12 @@ from rabbitvcs.util.decorators import gtk_unsafe
 
 log = Log("rabbitvcs.ui.browser")
 
-from rabbitvcs import gettext
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 helper.gobject_threads_init()

@@ -39,7 +39,12 @@ from rabbitvcs.util.strings import S
 import rabbitvcs.ui.action
 from rabbitvcs.ui.dialog import MessageBox
 
-from rabbitvcs import gettext
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 class Changes(InterfaceView):

@@ -1,3 +1,9 @@
+hamonikr-nemo-rabbitvcs (1.2.0) jin; urgency=medium
+
+  * Fixed translate bug in UI xml files
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 06 Jun 2021 13:37:32 +0900
+
 hamonikr-nemo-rabbitvcs (1.1.1) jin; urgency=medium
 
   * Update rabbitvcs-0.18/rabbitvcs/util/configspec/configspec.ini

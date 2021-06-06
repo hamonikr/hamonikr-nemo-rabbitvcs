@@ -38,7 +38,12 @@ from rabbitvcs.util.strings import S
 from rabbitvcs.util.log import Log
 log = Log("rabbitvcs.ui.property_page")
 
-from rabbitvcs import gettext
+import locale
+import gettext
+from rabbitvcs import APP_NAME, LOCALE_DIR
+locale.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.bindtextdomain(APP_NAME, LOCALE_DIR)
+gettext.textdomain(APP_NAME)
 _ = gettext.gettext
 
 class PropertyPage(rabbitvcs.ui.GtkBuilderWidgetWrapper):
