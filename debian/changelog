@@ -1,3 +1,9 @@
+hamonikr-nemo-rabbitvcs (1.2.1) hanla; urgency=medium
+
+  * Change depends for hanla
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 05 Oct 2021 12:45:47 +0900
+
 hamonikr-nemo-rabbitvcs (1.2.0) jin; urgency=medium
 
   * Fixed translate bug in UI xml files
