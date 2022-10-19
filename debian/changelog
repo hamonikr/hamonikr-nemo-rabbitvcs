@@ -1,3 +1,10 @@
+hamonikr-nemo-rabbitvcs (1.2.2) hanla; urgency=medium
+
+  * Update postinst and prerm
+   - removed output message when install
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 19 Oct 2022 14:37:13 +0900
+
 hamonikr-nemo-rabbitvcs (1.2.1) hanla; urgency=medium
 
   * Change depends for hanla
