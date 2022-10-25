@@ -1,3 +1,9 @@
+hamonikr-nemo-rabbitvcs (1.2.3) hanla; urgency=medium
+
+  * Adjust denpendancy for HamoniKR 6.0 basic
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 25 Oct 2022 20:46:49 +0900
+
 hamonikr-nemo-rabbitvcs (1.2.2) hanla; urgency=medium
 
   * Update postinst and prerm
