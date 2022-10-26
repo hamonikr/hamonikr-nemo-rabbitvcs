@@ -1,3 +1,10 @@
+hamonikr-nemo-rabbitvcs (1.2.4) taebaek; urgency=medium
+
+  * Fixed bug on HamoniKR 6.0 Full
+   - Add dependancy
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 27 Oct 2022 00:24:06 +0900
+
 hamonikr-nemo-rabbitvcs (1.2.3) hanla; urgency=medium
 
   * Adjust denpendancy for HamoniKR 6.0 basic
