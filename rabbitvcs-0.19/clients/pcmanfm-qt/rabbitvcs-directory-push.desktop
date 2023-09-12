@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Push
+Name=Push
+Icon=/usr/share/icons/hicolor/16x16/actions/rabbitvcs-push.png
+Profiles=rabbitvcs_directory_push;
+
+[X-Action-Profile rabbitvcs_directory_push]
+Exec=rabbitvcs push %F

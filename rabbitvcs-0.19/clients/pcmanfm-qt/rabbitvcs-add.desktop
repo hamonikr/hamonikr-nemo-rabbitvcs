@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Add...
+Name=Add...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-add.svg
+Profiles=rabbitvcs_add;
+
+[X-Action-Profile rabbitvcs_add]
+Exec=rabbitvcs add %F

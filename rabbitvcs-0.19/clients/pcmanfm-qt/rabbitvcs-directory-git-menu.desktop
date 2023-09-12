@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Menu
+Icon=/usr/share/icons/hicolor/scalable/apps/rabbitvcs.svg
+Name=RabbitVCS Git ...
+Tooltip=RabbitVCS Git ...
+MimeTypes=inode/directory;
+ItemsList=rabbitvcs-apply-patch;rabbitvcs-branches;rabbitvcs-checkout;rabbitvcs-git-clean;rabbitvcs-directory-clone;rabbitvcs-commit;rabbitvcs-create-patch;rabbitvcs-directory-git-create-repo;rabbitvcs-delete;rabbitvcs-export;rabbitvcs-merge;rabbitvcs-directory-push;rabbitvcs-remotes;rabbitvcs-reset;rabbitvcs-revert;rabbitvcs-show-changes;rabbitvcs-show-log;rabbitvcs-tags;rabbitvcs-directory-update;

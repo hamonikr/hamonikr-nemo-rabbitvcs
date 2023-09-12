@@ -6,7 +6,7 @@ case "$1" in
         # remove previous mo files
         rm -f /usr/share/locale/*/LC_MESSAGES/RabbitVCS.mo >/dev/null 2>&1 || true
 
-        [ -d "/opt/rabbitvcs-0.18" ] && cd /opt/rabbitvcs-0.18
+        [ -d "/opt/rabbitvcs-0.19" ] && cd /opt/rabbitvcs-0.19
         
         sudo python3 setup.py install --install-layout=deb \
         --record installfiles.txt >/dev/null 2>&1

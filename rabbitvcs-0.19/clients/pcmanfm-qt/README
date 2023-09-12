@@ -1,0 +1,23 @@
+RabbitVCS PCManFM-Qt Extension (EXPERIMENTAL!)
+
+This extension is meant to be used with the PCManFM-Qt File Manager
+
+Please note this extension only consists in menu entries and is not a PCManFM-Qt
+plugin. As a consequence, RabbitVCS functions are available through PCManFM-Qt
+contextual menus, but there is no integration with the PCManFM-Qt main window
+interface.
+
+Requirements:
+    * PCManFM-Qt
+    * (all other RabbitVCS requirements)
+
+To install it on PCManFM-Qt:
+    Copy all supplied .desktop files to:
+         ~/.local/share/file-manager/actions/
+
+    Install the RabbitCVS CLI client into some PATH directory (i.e.: /usr/bin).
+
+Troubleshooting:
+
+    See the known-issues section of our website:
+        http://wiki.rabbitvcs.org/wiki/support/known-issues

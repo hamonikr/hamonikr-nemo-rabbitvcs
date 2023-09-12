@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Create patch...
+Name=Create patch...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-createpatch.svg
+Profiles=rabbitvcs_create_patch;
+
+[X-Action-Profile rabbitvcs_create_patch]
+Exec=rabbitvcs createpatch %F

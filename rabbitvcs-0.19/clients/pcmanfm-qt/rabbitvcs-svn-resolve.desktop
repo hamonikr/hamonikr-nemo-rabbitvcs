@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Resolve...
+Name=Resolve...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-resolve.svg
+Profiles=rabbitvcs_svn_resolve;
+
+[X-Action-Profile rabbitvcs_svn_resolve]
+Exec=rabbitvcs resolve %F

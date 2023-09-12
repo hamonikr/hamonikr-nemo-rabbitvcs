@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Merge...
+Name=Merge...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-merge.svg
+Profiles=rabbitvcs_merge;
+
+[X-Action-Profile rabbitvcs_merge]
+Exec=rabbitvcs merge %F

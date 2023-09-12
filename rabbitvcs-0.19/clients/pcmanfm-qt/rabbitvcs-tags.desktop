@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Tags
+Name=Tags
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-branch.svg
+Profiles=rabbitvcs_tags;
+
+[X-Action-Profile rabbitvcs_tags]
+Exec=rabbitvcs tags %F

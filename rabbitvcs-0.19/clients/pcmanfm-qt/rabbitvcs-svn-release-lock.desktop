@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Release lock...
+Name=Release lock...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-unlock.svg
+Profiles=rabbitvcs_svn_release_lock;
+
+[X-Action-Profile rabbitvcs_svn_release_lock]
+Exec=rabbitvcs unlock %F

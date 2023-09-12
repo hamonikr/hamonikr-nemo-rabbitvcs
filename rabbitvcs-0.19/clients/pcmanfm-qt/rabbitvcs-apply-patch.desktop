@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Apply patch...
+Name=Apply patch...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-applypatch.svg
+Profiles=rabbitvcs_apply_patch;
+
+[X-Action-Profile rabbitvcs_apply_patch]
+Exec=rabbitvcs applypatch %F

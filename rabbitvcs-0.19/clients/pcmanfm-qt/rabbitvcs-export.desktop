@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Export...
+Name=Export...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-export.svg
+Profiles=rabbitvcs_export;
+
+[X-Action-Profile rabbitvcs_export]
+Exec=rabbitvcs export %F

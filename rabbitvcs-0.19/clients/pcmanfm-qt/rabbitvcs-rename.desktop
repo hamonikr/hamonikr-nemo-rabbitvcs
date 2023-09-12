@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Rename...
+Name=Rename...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-rename.svg
+Profiles=rabbitvcs_rename;
+
+[X-Action-Profile rabbitvcs_rename]
+Exec=rabbitvcs rename %F

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Delete
+Name=Delete
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-delete.svg
+Profiles=rabbitvcs_delete;
+
+[X-Action-Profile rabbitvcs_delete]
+Exec=rabbitvcs delete %F

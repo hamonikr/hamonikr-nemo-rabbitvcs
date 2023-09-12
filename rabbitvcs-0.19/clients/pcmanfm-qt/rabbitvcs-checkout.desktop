@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Checkout...
+Name=Checkout...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-checkout.svg
+Profiles=rabbitvcs_checkout;
+
+[X-Action-Profile rabbitvcs_checkout]
+Exec=rabbitvcs checkout %F

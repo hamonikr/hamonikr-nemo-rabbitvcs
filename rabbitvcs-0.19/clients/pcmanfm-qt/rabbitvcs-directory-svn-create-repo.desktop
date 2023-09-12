@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Create repository here
+Name=Create repository here
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-run.svg
+Profiles=rabbitvcs_directory_svn_create_repo;
+
+[X-Action-Profile rabbitvcs_directory_svn_create_repo]
+Exec=rabbitvcs create --vcs svn %F

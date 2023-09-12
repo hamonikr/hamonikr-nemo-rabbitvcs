@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Clone
+Name=Clone
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-checkout.svg
+Profiles=rabbitvcs_directory_clone;
+
+[X-Action-Profile rabbitvcs_directory_clone]
+Exec=rabbitvcs clone %F

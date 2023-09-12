@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Show log
+Name=Show log
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-show_log.svg
+Profiles=rabbitvcs_show_log;
+
+[X-Action-Profile rabbitvcs_show_log]
+Exec=rabbitvcs log %F

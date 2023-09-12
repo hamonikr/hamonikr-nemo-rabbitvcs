@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Clean up...
+Name=Clean up...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-cleanup.svg
+Profiles=rabbitvcs_directory_svn_cleanup;
+
+[X-Action-Profile rabbitvcs_directory_svn_cleanup]
+Exec=rabbitvcs cleanup %F

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Commit...
+Name=Commit...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-commit.svg
+Profiles=rabbitvcs_commit;
+
+[X-Action-Profile rabbitvcs_commit]
+Exec=rabbitvcs commit %F

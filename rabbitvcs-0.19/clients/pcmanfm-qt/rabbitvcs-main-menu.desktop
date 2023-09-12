@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Menu
+Icon=/usr/share/icons/hicolor/scalable/apps/rabbitvcs.svg
+Name=RabbitVCS ...
+Tooltip=RabbitVCS ...
+ItemsList=rabbitvcs-directory-git-menu;rabbitvcs-file-git-menu;rabbitvcs-directory-svn-menu;rabbitvcs-file-svn-menu;rabbitvcs-settings;rabbitvcs-about;
+MimeTypes=inode/directory;all/allfiles;

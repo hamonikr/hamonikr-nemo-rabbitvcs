@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Repo Browser
+Name=Repo Browser
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-drive.svg
+Profiles=rabbitvcs_svn_browser;
+
+[X-Action-Profile rabbitvcs_svn_browser]
+Exec=rabbitvcs browser %F

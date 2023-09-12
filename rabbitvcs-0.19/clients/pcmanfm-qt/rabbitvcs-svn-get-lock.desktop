@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Get lock...
+Name=Get lock...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-lock.svg
+Profiles=rabbitvcs_svn_get_lock;
+
+[X-Action-Profile rabbitvcs_svn_get_lock]
+Exec=rabbitvcs lock %F

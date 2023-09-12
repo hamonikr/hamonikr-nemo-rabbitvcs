@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Annotate...
+Name=Annotate...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-annotate.svg
+Profiles=rabbitvcs_file_annotate;
+
+[X-Action-Profile rabbitvcs_file_annotate]
+Exec=rabbitvcs annotate %F

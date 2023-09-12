@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Branches
+Name=Branches
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-branch.svg
+Profiles=rabbitvcs_branches;
+
+[X-Action-Profile rabbitvcs_branches]
+Exec=rabbitvcs branches %F

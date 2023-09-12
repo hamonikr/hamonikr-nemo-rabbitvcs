@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=About
+Name=About
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-about.svg
+Profiles=rabbitvcs_about;
+
+[X-Action-Profile rabbitvcs_about]
+Exec=rabbitvcs about

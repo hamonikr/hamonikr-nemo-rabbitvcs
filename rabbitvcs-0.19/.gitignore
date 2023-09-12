@@ -1,0 +1,7 @@
+*.pyc
+*~
+rabbitvcs/buildinfo.py
+build/
+dist/
+rabbitvcs.egg-info/
+.vscode

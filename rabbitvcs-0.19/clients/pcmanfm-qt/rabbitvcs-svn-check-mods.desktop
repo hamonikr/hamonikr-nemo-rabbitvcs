@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Check for modifications
+Name=Check for modifications
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-checkmods.svg
+Profiles=rabbitvcs_svn_check_mods;
+
+[X-Action-Profile rabbitvcs_svn_check_mods]
+Exec=rabbitvcs checkmods %F

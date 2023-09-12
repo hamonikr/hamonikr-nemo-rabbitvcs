@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Remotes
+Name=Remotes
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-checkmods.svg
+Profiles=rabbitvcs_remotes;
+
+[X-Action-Profile rabbitvcs_remotes]
+Exec=rabbitvcs remotes %F

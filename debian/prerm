@@ -2,9 +2,9 @@
 set -e
 
 # uninstall from python3 setup.py
-cd /opt/rabbitvcs-0.18
+cd /opt/rabbitvcs-0.19
 xargs rm -rf < installfiles.txt || true
 
-rm -rf /opt/rabbitvcs-0.18/ || true
+rm -rf /opt/rabbitvcs-0.19/ || true
 rm -f /usr/share/nemo-python/extensions/RabbitVCS.py || true
 

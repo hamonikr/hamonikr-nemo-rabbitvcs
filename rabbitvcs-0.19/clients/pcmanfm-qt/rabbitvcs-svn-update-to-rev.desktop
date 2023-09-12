@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Update to revision...
+Name=Update to revision...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-update.svg
+Profiles=rabbitvcs_svn_update_to_rev;
+
+[X-Action-Profile rabbitvcs_svn_update_to_rev]
+Exec=rabbitvcs updateto %F

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Show Changes...
+Name=Show Changes...
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-changes.svg
+Profiles=rabbitvcs_show_changes;
+
+[X-Action-Profile rabbitvcs_show_changes]
+Exec=rabbitvcs changes %F

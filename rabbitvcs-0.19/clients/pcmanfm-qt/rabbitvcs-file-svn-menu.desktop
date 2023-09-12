@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Menu
+Icon=/usr/share/icons/hicolor/scalable/apps/rabbitvcs.svg
+Name=RabbitVCS SVN ...
+Tooltip=RabbitVCS SVN ...
+MimeTypes=all/allfiles;
+ItemsList=rabbitvcs-add;rabbitvcs-file-annotate;rabbitvcs-svn-branch-tag;rabbitvcs-svn-browser;rabbitvcs-svn-check-mods;rabbitvcs-commit;rabbitvcs-create-patch;rabbitvcs-delete;rabbitvcs-file-edit-conflicts;rabbitvcs-svn-get-lock;rabbitvcs-ignore;rabbitvcs-merge;rabbitvcs-svn-properties;rabbitvcs-svn-release-lock;rabbitvcs-rename;rabbitvcs-svn-resolve;rabbitvcs-revert;rabbitvcs-show-changes;rabbitvcs-show-log;rabbitvcs-svn-switch;rabbitvcs-update;rabbitvcs-svn-update-to-rev;

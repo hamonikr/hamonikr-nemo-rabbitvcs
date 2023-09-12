@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Settings
+Name=Settings
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-settings.svg
+Profiles=rabbitvcs_settings;
+
+[X-Action-Profile rabbitvcs_settings]
+Exec=rabbitvcs settings

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Properties
+Name=Properties
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-properties.svg
+Profiles=rabbitvcs_svn_properties;
+
+[X-Action-Profile rabbitvcs_svn_properties]
+Exec=rabbitvcs properties %F

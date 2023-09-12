@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Ignore
+Name=Ignore
+Profiles=rabbitvcs_ignore;
+
+[X-Action-Profile rabbitvcs_ignore]
+Exec=rabbitvcs ignore %F

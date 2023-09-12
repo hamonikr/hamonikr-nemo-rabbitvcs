@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Reset
+Name=Reset
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-reset.svg
+Profiles=rabbitvcs_reset;
+
+[X-Action-Profile rabbitvcs_reset]
+Exec=rabbitvcs reset %F

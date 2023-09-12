@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Action
+TargetToolbar=true
+ToolbarLabel=Edit conflicts
+Name=Edit conflicts
+Icon=/usr/share/icons/hicolor/scalable/actions/rabbitvcs-editconflicts.svg
+Profiles=rabbitvcs_file_edit_conflicts;
+
+[X-Action-Profile rabbitvcs_file_edit_conflicts]
+Exec=rabbitvcs editconflicts %F
