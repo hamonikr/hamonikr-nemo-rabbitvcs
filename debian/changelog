@@ -1,3 +1,10 @@
+hamonikr-nemo-rabbitvcs (1.3.1) stable; urgency=medium
+
+  * Hide other vcs
+   - hide svn, Hg
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 01 Oct 2023 02:19:29 +0900
+
 hamonikr-nemo-rabbitvcs (1.3.0) stable; urgency=medium
 
   * Applied new upstream ver 0.19
