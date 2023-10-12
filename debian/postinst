@@ -12,7 +12,18 @@ case "$1" in
         --record installfiles.txt >/dev/null 2>&1
         
         sudo chmod +x /usr/share/nemo-python/extensions/RabbitVCS.py
-        
+
+        # hide svn, hg in context menu
+        if [ -f "/usr/share/rabbitvcs/configspec.ini" ] ; then
+            sed -i 's|svn = boolean(default=False)|svn = boolean(default=True)|g' /usr/share/rabbitvcs/configspec.ini
+            sed -i 's|hg = boolean(default=False)|hg = boolean(default=True)|g' /usr/share/rabbitvcs/configspec.ini
+            echo "Updated /usr/share/rabbitvcs/configspec.ini"
+        fi
+        if [ -f "/opt/rabbitvcs-0.19/rabbitvcs/util/configspec/configspec.ini" ] ; then
+            sed -i 's|svn = boolean(default=False)|svn = boolean(default=True)|g' /opt/rabbitvcs-0.19/rabbitvcs/util/configspec/configspec.ini
+            sed -i 's|hg = boolean(default=False)|hg = boolean(default=True)|g' /opt/rabbitvcs-0.19/rabbitvcs/util/configspec/configspec.ini
+            echo "Updated /opt/rabbitvcs-0.19/rabbitvcs/util/configspec/configspec.ini"
+        fi        
         killall nemo >/dev/null 2>&1 || true
     ;;
 
