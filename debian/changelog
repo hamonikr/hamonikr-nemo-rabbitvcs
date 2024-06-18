@@ -1,3 +1,9 @@
+hamonikr-nemo-rabbitvcs (1.3.3) stable; urgency=medium
+
+  * Release for ubuntu 24.04 noble
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 18 Jun 2024 09:39:31 +0900
+
 hamonikr-nemo-rabbitvcs (1.3.2) stable; urgency=medium
 
   * Update settings
