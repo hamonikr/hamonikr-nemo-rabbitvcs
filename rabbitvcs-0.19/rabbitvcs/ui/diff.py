@@ -6,11 +6,11 @@ from rabbitvcs.ui.action import SVNAction, GitAction
 import rabbitvcs.vcs
 from rabbitvcs.ui import InterfaceNonView
 from rabbitvcs import TEMP_DIR_PREFIX
-from gi.repository import Gtk, Gdk, GLib, Gesture
+from gi.repository import Gtk, Gdk, GLib
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

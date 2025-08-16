@@ -4,11 +4,11 @@ import rabbitvcs.util.helper
 import rabbitvcs.ui.wraplabel
 import rabbitvcs.ui.widget
 from rabbitvcs.ui import InterfaceView
-from gi.repository import Gtk, GObject, Gdk, Pango, Gesture, GLib
+from gi.repository import Gtk, GObject, Gdk, Pango, GLib
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

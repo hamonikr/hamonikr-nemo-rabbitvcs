@@ -41,11 +41,11 @@ try:
 except:
     gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
-from gi.repository import Gtk, GLib, Gesture
+from gi.repository import Gtk, GLib
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

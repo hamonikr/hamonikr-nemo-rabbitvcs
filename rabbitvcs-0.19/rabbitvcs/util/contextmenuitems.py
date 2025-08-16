@@ -27,11 +27,11 @@ import os
 import gi
 
 gi.require_version("Gtk", "4.0")
-from gi.repository import Gtk, Gesture
+from gi.repository import Gtk
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

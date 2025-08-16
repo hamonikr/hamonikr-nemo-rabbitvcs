@@ -54,11 +54,11 @@ from rabbitvcs.util.helper import launch_ui_window, launch_diff_tool
 import rabbitvcs.vcs.status
 from rabbitvcs.vcs import VCS
 import pysvn
-from gi.repository import Nemo, GObject, Gtk, GdkPixbuf, Gesture
+from gi.repository import Nemo, GObject, Gtk, GdkPixbuf
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gtk4, Gesture
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

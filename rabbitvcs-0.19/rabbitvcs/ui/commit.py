@@ -10,11 +10,11 @@ import rabbitvcs.ui.widget
 import rabbitvcs.ui.action
 from rabbitvcs.util.contextmenu import GtkFilesContextMenu, GtkContextMenuCaller
 from rabbitvcs.ui import InterfaceView
-from gi.repository import Gtk, GObject, Gdk, GLib, Gesture
+from gi.repository import Gtk, GObject, Gdk, GLib
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

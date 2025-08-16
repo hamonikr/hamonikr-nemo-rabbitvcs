@@ -33,11 +33,11 @@ import rabbitvcs.ui.widget
 from rabbitvcs.ui.dialog import MessageBox
 from rabbitvcs.ui.action import SVNAction, GitAction, vcs_action_factory
 from rabbitvcs.ui import InterfaceView
-from gi.repository import Gtk, GObject, Gdk, Gesture
+from gi.repository import Gtk, GObject, Gdk
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False

@@ -41,11 +41,11 @@ from rabbitvcs.util.helper import launch_ui_window, launch_diff_tool
 import rabbitvcs.ui.property_page
 import rabbitvcs.ui
 from rabbitvcs.vcs.svn import SVN
-from gi.repository import GObject, Thunarx, Gesture
+from gi.repository import GObject, Thunarx
 
 # GTK4 event controllers
 try:
-    from gi.repository import Gtk4
+    from gi.repository import Gesture, Gtk4
     HAS_GTK4 = True
 except ImportError:
     HAS_GTK4 = False
