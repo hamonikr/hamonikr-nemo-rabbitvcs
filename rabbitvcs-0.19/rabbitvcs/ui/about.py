@@ -8,6 +8,15 @@ from rabbitvcs.ui import InterfaceView
 import rabbitvcs
 from gi.repository import Gtk, GObject, GdkPixbuf
 import gi
+
+# Try to import Adwaita for GTK4
+try:
+    gi.require_version("Adw", "1.0")
+    from gi.repository import Adw
+    HAS_ADWAITA = True
+except (ImportError, ValueError):
+    HAS_ADWAITA = False
+import gi
 from rabbitvcs.util import helper
 import re
 import string
@@ -36,7 +45,7 @@ You should have received a copy of the GNU General Public License
 along with RabbitVCS;  If not, see <http://www.gnu.org/licenses/>.  """
 
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
 sa.restore()
 
@@ -51,8 +60,12 @@ class About(object):
     """
 
     def __init__(self):
-        self.about = Gtk.AboutDialog()
-        self.about.set_name(rabbitvcs.APP_NAME)
+        if HAS_ADWAITA:
+            self.about = Adw.AboutWindow()
+            self.about.set_application_name(rabbitvcs.APP_NAME)
+        else:
+            self.about = Gtk.AboutDialog()
+            self.about.set_name(rabbitvcs.APP_NAME)
 
         self.about.set_program_name(rabbitvcs.APP_NAME)
         self.about.set_version(rabbitvcs.version)

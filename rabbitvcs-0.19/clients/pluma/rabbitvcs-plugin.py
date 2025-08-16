@@ -10,7 +10,14 @@ from rabbitvcs.util.contextmenu import (
 )
 from rabbitvcs.vcs import create_vcs_instance
 from gi.repository import Pluma, GObject, Peas
-from gi.repository import Gtk
+from gi.repository import Gtk, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 
 #
 # This is a Pluma plugin to allow for RabbitVCS integration in the Pluma
@@ -39,7 +46,7 @@ import gi
 
 from rabbitvcs.util import helper
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
 sa.restore()
 

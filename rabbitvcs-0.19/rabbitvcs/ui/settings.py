@@ -9,6 +9,15 @@ import rabbitvcs.ui.dialog
 import rabbitvcs.ui.widget
 from rabbitvcs.ui import InterfaceView
 from gi.repository import Gtk, GObject, Gdk, Pango
+import gi
+
+# Try to import Adwaita for GTK4
+try:
+    gi.require_version("Adw", "1.0")
+    from gi.repository import Adw
+    HAS_ADWAITA = True
+except (ImportError, ValueError):
+    HAS_ADWAITA = False
 
 #
 # This is an extension to the Nautilus file manager to allow better
@@ -40,7 +49,7 @@ from rabbitvcs.util import helper
 
 import gi
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
 sa.restore()
 

@@ -33,7 +33,14 @@ import rabbitvcs.ui.widget
 from rabbitvcs.ui.dialog import MessageBox
 from rabbitvcs.ui.action import SVNAction, GitAction, vcs_action_factory
 from rabbitvcs.ui import InterfaceView
-from gi.repository import Gtk, GObject, Gdk
+from gi.repository import Gtk, GObject, Gdk, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 import six
 import threading
 from locale import strxfrm
@@ -44,7 +51,7 @@ from rabbitvcs.util import helper
 
 import gi
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
 sa.restore()
 

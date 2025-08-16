@@ -25,7 +25,14 @@ from gettext import gettext as _
 import os
 
 from gi.repository import Gedit, GObject
-from gi.repository import Gtk as gtk
+from gi.repository import Gtk as gtk, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 
 import rabbitvcs.util.helper
 from rabbitvcs.vcs import create_vcs_instance

@@ -37,11 +37,18 @@ from rabbitvcs.util import helper
 import gi
 
 try:
-    gi.require_version("Gtk", "3.0")
+    gi.require_version("Gtk", "4.0")
 except:
     gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
-from gi.repository import Gtk, GLib
+from gi.repository import Gtk, GLib, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 
 sa.restore()
 

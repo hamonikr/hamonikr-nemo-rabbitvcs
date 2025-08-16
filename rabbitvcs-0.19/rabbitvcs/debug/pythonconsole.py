@@ -29,7 +29,14 @@
 #   Copyright (C) 2006 - Steve Frécinaux
 
 from rabbitvcs.util.strings import S
-from gi.repository import GLib, Gtk, Gdk, Pango
+from gi.repository import GLib, Gtk, Gdk, Pango, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 import string
 import sys
 import re
@@ -37,7 +44,7 @@ import traceback
 
 import gi
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 
 
 class PythonConsole(Gtk.ScrolledWindow):

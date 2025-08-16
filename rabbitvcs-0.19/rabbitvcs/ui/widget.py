@@ -40,7 +40,7 @@ from locale import strxfrm
 import gi
 
 try:
-    gi.require_version("Gtk", "3.0")
+    gi.require_version("Gtk", "4.0")
 except:
     gi.require_version("Gtk", "4.0")
 
@@ -1681,3 +1681,42 @@ class MultiFileTextEditor(object):
                 fh = open(tmppath, "w")
                 fh.write(self.cache[tmppath])
                 fh.close()
+
+
+class GtkTemplateHelper:
+    """
+    Helper class for GTK4 template system.
+    Replaces GtkBuilderWidgetWrapper for GTK4 compatibility.
+    """
+    
+    def __init__(self, template_name, widget_name=None):
+        self.template_name = template_name
+        self.widget_name = widget_name
+        self.builder = Gtk.Builder()
+        self.builder.add_from_file(template_name)
+        
+        if widget_name:
+            self.widget = self.builder.get_object(widget_name)
+        else:
+            # Get the first widget from the template
+            self.widget = None
+            for obj in self.builder.get_objects():
+                if isinstance(obj, Gtk.Widget):
+                    self.widget = obj
+                    break
+    
+    def get_widget(self, name):
+        """Get a widget by name from the template."""
+        return self.builder.get_object(name)
+    
+    def get_widgets(self):
+        """Get all widgets from the template."""
+        return self.builder.get_objects()
+    
+    def connect_signals(self, signals_dict):
+        """Connect signals to handlers."""
+        self.builder.connect_signals(signals_dict)
+    
+    def get_main_widget(self):
+        """Get the main widget from the template."""
+        return self.widget

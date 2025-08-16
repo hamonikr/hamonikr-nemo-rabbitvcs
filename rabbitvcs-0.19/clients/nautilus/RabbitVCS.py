@@ -51,7 +51,14 @@ from rabbitvcs.util.helper import launch_ui_window, launch_diff_tool
 import rabbitvcs.vcs.status
 from rabbitvcs.vcs import VCS
 import pysvn
-from gi.repository import Nautilus, GObject, Gtk, GdkPixbuf
+from gi.repository import Nautilus, GObject, Gtk, GdkPixbuf, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 from rabbitvcs.util import helper
 import datetime
 from os.path import isdir, isfile, realpath, basename, dirname

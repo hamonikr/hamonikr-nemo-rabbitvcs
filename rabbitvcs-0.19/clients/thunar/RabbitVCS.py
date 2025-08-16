@@ -41,7 +41,14 @@ from rabbitvcs.util.helper import launch_ui_window, launch_diff_tool
 import rabbitvcs.ui.property_page
 import rabbitvcs.ui
 from rabbitvcs.vcs.svn import SVN
-from gi.repository import GObject, Thunarx
+from gi.repository import GObject, Thunarx, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 import copy
 import os.path
 from os.path import realpath
@@ -51,7 +58,7 @@ from rabbitvcs.util import helper
 
 import gi
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
 sa.restore()
 

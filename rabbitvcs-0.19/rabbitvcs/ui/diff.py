@@ -6,7 +6,14 @@ from rabbitvcs.ui.action import SVNAction, GitAction
 import rabbitvcs.vcs
 from rabbitvcs.ui import InterfaceNonView
 from rabbitvcs import TEMP_DIR_PREFIX
-from gi.repository import Gtk, Gdk, GLib
+from gi.repository import Gtk, Gdk, GLib, Gesture
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 
 #
 # This is an extension to the Nautilus file manager to allow better
@@ -38,7 +45,7 @@ from rabbitvcs.util import helper
 
 import gi
 
-gi.require_version("Gtk", "3.0")
+gi.require_version("Gtk", "4.0")
 sa = helper.SanitizeArgv()
 sa.restore()
 
