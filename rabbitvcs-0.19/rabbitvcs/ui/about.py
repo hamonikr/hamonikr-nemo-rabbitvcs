@@ -110,7 +110,14 @@ class About(object):
         self.about.set_license(license)
 
     def run(self):
-        self.about.show_all()
+        if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            self.about.show()
+            self.about.present()
+        else:
+            # GTK3: Use show_all()
+            self.about.show_all()
+        
         self.about.run()
         self.about.destroy()
 

@@ -1490,7 +1490,17 @@ class GitRepositorySelector(object):
         grid.attach(label, 0, 2, 1, 1)
         grid.attach(self.host, 1, 2, 1, 1)
 
-        grid.show_all()
+        if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            grid.show()
+        else:
+            # GTK3: Use show_all()
+            if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            grid.show()
+        else:
+            # GTK3: Use show_all()
+            grid.show_all()
         container.add(grid)
 
         self.__update_host()
@@ -1543,7 +1553,12 @@ class GitBranchSelector(object):
         hbox.pack_start(self.branch_opt.cb, True, False, 0)
         self.vbox.pack_start(hbox, False, False, 0)
 
-        self.vbox.show_all()
+        if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            self.vbox.show()
+        else:
+            # GTK3: Use show_all()
+            self.vbox.show_all()
         container.add(self.vbox.box)
 
     def append(self, widget):
@@ -1556,7 +1571,12 @@ class GitBranchSelector(object):
         pass
 
     def show(self):
-        self.vbox.show_all()
+        if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            self.vbox.show()
+        else:
+            # GTK3: Use show_all()
+            self.vbox.show_all()
 
     def hide(self):
         self.vbox.hide()
@@ -1623,7 +1643,12 @@ class MultiFileTextEditor(object):
             grid.attach(add_button, 2, 1, 1, 1)
 
         grid.attach(scrolled_window, 0, 2, 3, 1)
-        grid.show_all()
+        if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            grid.show()
+        else:
+            # GTK3: Use show_all()
+            grid.show_all()
 
         self.combobox.set_active(0)
 

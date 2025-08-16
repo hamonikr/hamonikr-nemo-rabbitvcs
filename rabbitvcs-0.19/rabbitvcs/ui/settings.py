@@ -434,4 +434,12 @@ if __name__ == "__main__":
 
     window = Settings(options.base_dir)
     window.register_gtk_quit()
-    Gtk.main()
+    
+    if HAS_GTK4:
+        # GTK4: Use application loop instead of Gtk.main()
+        app = Gtk.Application(application_id="org.rabbitvcs.settings")
+        app.connect("activate", lambda app: window.show())
+        app.run(None)
+    else:
+        # GTK3: Use Gtk.main()
+        Gtk.main()

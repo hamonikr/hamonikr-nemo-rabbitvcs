@@ -116,12 +116,21 @@ class Commit(InterfaceView, GtkContextMenuCaller):
             ],
             callbacks={
                 "row-activated": self.on_files_table_row_activated,
-                "mouse-event": self.on_files_table_mouse_event,
-                "key-event": self.on_files_table_key_event,
                 "row-toggled": self.on_files_table_toggle_event,
             },
             flags={"sortable": True, "sort_on": 2},
         )
+        
+        # GTK4: Use event controllers instead of deprecated signals
+        if HAS_GTK4:
+            # Add event controllers for mouse and keyboard events
+            mouse_controller = Gtk.GestureClick()
+            mouse_controller.connect("pressed", self.on_files_table_mouse_event)
+            self.get_widget("files_table").add_controller(mouse_controller)
+            
+            key_controller = Gtk.EventControllerKey()
+            key_controller.connect("key-pressed", self.on_files_table_key_event)
+            self.get_widget("files_table").add_controller(key_controller)
         self.files_table.allow_multiple()
         self.get_widget("toggle_show_unversioned").set_active(self.SHOW_UNVERSIONED)
         if not message:
@@ -438,4 +447,12 @@ if __name__ == "__main__":
 
     window = commit_factory(paths, options.base_dir, message=options.message)
     window.register_gtk_quit()
-    Gtk.main()
+    
+    if HAS_GTK4:
+        # GTK4: Use application loop instead of Gtk.main()
+        app = Gtk.Application(application_id="org.rabbitvcs.commit")
+        app.connect("activate", lambda app: window.show())
+        app.run(None)
+    else:
+        # GTK3: Use Gtk.main()
+        Gtk.main()

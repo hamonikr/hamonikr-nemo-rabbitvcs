@@ -4,7 +4,14 @@ import rabbitvcs.util.helper
 import rabbitvcs.ui.wraplabel
 import rabbitvcs.ui.widget
 from rabbitvcs.ui import InterfaceView
-from gi.repository import Gtk, GObject, Gdk, Pango
+from gi.repository import Gtk, GObject, Gdk, Pango, Gesture, GLib
+
+# GTK4 event controllers
+try:
+    from gi.repository import Gtk4
+    HAS_GTK4 = True
+except ImportError:
+    HAS_GTK4 = False
 
 #
 # This is an extension to the Nautilus file manager to allow better
@@ -472,7 +479,12 @@ class ErrorNotification(InterfaceView):
 
         notice_box = rabbitvcs.ui.widget.Box(self.get_widget("notice_box"))
         notice_box.pack_start(notice, True, True, 0)
-        notice_box.show_all()
+        if HAS_GTK4:
+            # GTK4: Use show() instead of show_all()
+            notice_box.show()
+        else:
+            # GTK3: Use show_all()
+            notice_box.show_all()
 
         self.textview = rabbitvcs.ui.widget.TextView(
             self.get_widget("error_text"), text, spellcheck=False
@@ -571,7 +583,86 @@ class Loading(InterfaceView):
 
     def run(self):
         self.dialog = self.get_widget("Loading")
-        self.dialog.run()
+        if HAS_GTK4:
+            # GTK4: Use present() instead of run()
+            self.dialog.present()
+        else:
+            # GTK3: Use run()
+            self.dialog.run()
 
     def destroy(self):
+        if self.dialog:
+            if HAS_GTK4:
+                # GTK4: Use close() instead of destroy()
+                self.dialog.close()
+            else:
+                # GTK3: Use destroy()
+                self.dialog.destroy()
+
+
+class MessageDialog:
+    """
+    GTK4 compatible message dialog.
+    Replaces the old dialog system for simple message displays.
+    """
+    
+    def __init__(self, parent=None, message_type=Gtk.MessageType.INFO, 
+                 text="", secondary_text="", buttons=Gtk.ButtonsType.OK):
+        self.dialog = Gtk.MessageDialog(
+            transient_for=parent,
+            message_type=message_type,
+            text=text,
+            secondary_text=secondary_text,
+            buttons=buttons
+        )
+    
+    def run(self):
+        """Run the dialog and return the response."""
+        response = self.dialog.run()
         self.dialog.destroy()
+        return response
+    
+    def destroy(self):
+        """Destroy the dialog."""
+        if self.dialog:
+            self.dialog.destroy()
+
+
+def exec_dialog(parent=None, message_type=Gtk.MessageType.INFO, 
+                text="", secondary_text="", buttons=Gtk.ButtonsType.OK):
+    """
+    Convenience function to show a simple message dialog.
+    """
+    dialog = MessageDialog(parent, message_type, text, secondary_text, buttons)
+    return dialog.run()
+
+
+def exec_notification(parent=None, text="", timeout=3):
+    """
+    Show a simple notification dialog.
+    """
+    dialog = Gtk.InfoBar()
+    dialog.set_message_type(Gtk.MessageType.INFO)
+    dialog.add_button("_OK", Gtk.ResponseType.OK)
+    
+    label = Gtk.Label(label=text)
+    dialog.get_content_area().add(label)
+    
+    if parent:
+        dialog.set_transient_for(parent)
+    
+    if HAS_GTK4:
+        # GTK4: Use show() instead of show_all()
+        dialog.show()
+    else:
+        # GTK3: Use show_all()
+        dialog.show_all()
+    
+    # Auto-hide after timeout
+    def hide_notification():
+        dialog.destroy()
+    
+    if timeout > 0:
+        GLib.timeout_add_seconds(timeout, hide_notification)
+    
+    return dialog
