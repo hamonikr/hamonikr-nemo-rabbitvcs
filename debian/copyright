@@ -17,6 +17,6 @@ License: GPL-3+
  On Debian systems, the complete text of the GNU General
  Public License can be found in `/usr/share/common-licenses/GPL'
 
-Files: rabbitvcs-0.18/*
+Files: rabbitvcs-0.19/*
 Copyright: RabbitVCS Team <rabbitvcs@googlegroups.com>
-License: rabbitvcs-0.18/debian/copyright
+License: rabbitvcs-0.19/debian/copyright
